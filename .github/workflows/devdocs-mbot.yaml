@@ -1,4 +1,4 @@
-name: pgn-078
+name: pgn-078-infra
 on:
   push:
     branches:
