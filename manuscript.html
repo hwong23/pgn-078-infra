@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
-  <meta name="author" content="Jane Roe" />
+  <meta name="author" content="Harry Wong, ing." />
   <meta name="dcterms.date" content="2023-09-15" />
-  <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manuscript Title</title>
+  <meta name="keywords" content="SOA, madurez, gobierno, PGN" />
+  <title>Documento de Arquitectura Migración Funcional PGN SIU</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -21,69 +20,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -110,425 +46,3467 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
   <meta name="dc.date" content="2023-09-15" />
   <meta name="citation_publication_date" content="2023-09-15" />
   <meta property="article:published_time" content="2023-09-15" />
-  <meta name="dc.modified" content="2023-09-15T02:38:45+00:00" />
-  <meta property="article:modified_time" content="2023-09-15T02:38:45+00:00" />
+  <meta name="dc.modified" content="2023-09-15T02:43:13+00:00" />
+  <meta property="article:modified_time" content="2023-09-15T02:43:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Harry Wong, ing." />
+  <meta name="citation_author_institution" content="Arquitecto, Softgic" />
   <link rel="canonical" href="https://hwong23.github.io/pgn-078-infra/" />
   <meta property="og:url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta property="twitter:url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/c65edb55299bd3470e01a5edcb2c8dbafe91a2cd/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/c65edb55299bd3470e01a5edcb2c8dbafe91a2cd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/c65edb55299bd3470e01a5edcb2c8dbafe91a2cd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
-  
-  <!-- pandoc-eqnos: equation style -->
-  <style>
-    .eqnos { display: inline-block; position: relative; width: 100%; }
-    .eqnos br { display: none; }
-    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
-  </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Manuscript Title</h1>
+<h1 class="title">Documento de Arquitectura Migración Funcional PGN SIU</h1>
+<p class="subtitle">OP 078-2023 - Fase 2, PGN Migración Funcional SIU</p>
 </header>
-<p><small><em>
-This manuscript
-(<a href="https://hwong23.github.io/pgn-078-infra/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/">permalink</a>)
-was automatically generated
-from <a href="https://github.com/hwong23/pgn-078-infra/tree/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9">hwong23/pgn-078-infra@8c1a803</a>
-on September 15, 2023.
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<div class="line-block"><strong>Versión</strong> del producto 1.c65edb5 de 15 Sep 2023</div>
+<div class="line-block"><strong>Presentado a</strong></div>
+<div class="line-block">Procuraduría General de la Nación (PGN)</div>
+<div class="line-block"></div>
+<div class="line-block"><strong>Fecha</strong></div>
+<div class="line-block">15 Sep 2023</div>
+<div style="page-break-before: always;">
+
+</div>
+<p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
+(<a href="https://hwong23.github.io/pgn-078-infra/v/c65edb55299bd3470e01a5edcb2c8dbafe91a2cd/">Web</a>)
+están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@c65edb5</a>
+del September 15, 2023.
 </em></small></p>
-<h2 id="authors">Authors</h2>
+<p><br></p>
+<h2 id="autores">Autores</h2>
 <ul>
-<li><p><strong>John Doe</strong>
+<li><strong>Harry Wong, ing.</strong>
 <br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/johndoe">johndoe</a>
-· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
-<a href="https://twitter.com/johndoe">johndoe</a>
-· <img src="images/mastodon.svg" class="inline_icon" width="16" height="16" alt="Mastodon icon" />
-<a href="https://mastodon.social/@johndoe">@johndoe@mastodon.social</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="Usuario" />
+<a href="https://github.com/e_hwong">e_hwong</a>
 <br>
 <small>
-Department of Something, University of Whatever
-· Funded by Grant XXXXXXXX
-</small></p></li>
-<li><p><strong>Jane Roe</strong>
-<sup><a href="#correspondence">✉</a></sup><br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/janeroe">janeroe</a>
-<br>
-<small>
-Department of Something, University of Whatever; Department of Whatever, University of Something
-</small></p></li>
+Arquitecto, Softgic
+</small></li>
 </ul>
 <div id="correspondence">
-<p>✉ — Correspondence possible via <a href="https://github.com/hwong23/pgn-078-infra/issues">GitHub Issues</a>
-or email to
-Jane Roe &lt;jane.roe@whatever.edu&gt;.</p>
+<p>✉ — Enviar mensajes a Harry Wong, ing. &lt;harry.wong@softgic.co&gt;.</p>
 </div>
-<h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
-Use this template as a starting point for your manuscript.</p>
-<p>The rest of this document is a full list of formatting elements/features supported by Manubot.
-Compare the input (<code>.md</code> files in the <code>/content</code> directory) to the output you see below.</p>
-<h2 id="basic-formatting">Basic formatting</h2>
-<p><strong>Bold</strong> <strong>text</strong></p>
-<p><span class="semibold">Semi-bold text</span></p>
-<p><span class="center">Centered text</span></p>
-<p><span class="right">Right-aligned text</span></p>
-<p><em>Italic</em> <em>text</em></p>
-<p>Combined <em>italics and <strong>bold</strong></em></p>
-<p><del>Strikethrough</del></p>
+<p><br></p>
+<h2 id="objetivo-del-documento">Objetivo del Documento</h2>
+<p>Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto Migración Funcional SIU de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición lógica y física de las partes del sistema. Por tanto, el documento contiene información estratégica, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.</p>
+<p><br></p>
+<h2 class="page_break_before" id="control-de-cambios">Control de Cambios</h2>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>OP 078-2023 Fase 2, PGN Migración Funcional SIU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Palabras clave</td>
+<td>SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td>1.c65edb5 del 15 Sep 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="N03a%a20Vsta%20aSegenta%20SOA%20PGN.md">N003a Vista Segmento PGN SIU</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<h2 id="contenidos">Contenidos</h2>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="introducción">Introducción</h1>
+<h2 id="propósito">Propósito</h2>
+<p>Este documento tiene como propósito presentar la arquitectura del aplicativo Sistema Único de Información (SUI) para Procuraduría General de la Nación (PGN). según los requerimientos definidos durante la etapa de preventa y luego detallados en las historias de usuario.</p>
+<p>La arquitectura será una guía para que el diseño y la implementación de los componentes que conforman la solución sean cobijados bajo lineamientos y premisas bien definidos, permitiendo a los elementos del sistema interactuar entre sí de forma coherente. La arquitectura será tomada como un diseño estratégico que establece restricciones globales para el diseño, define un marco inicial de trabajo para la implementación de los requerimientos funcionales y no funcionales.</p>
+<p>La definición arquitectónica de este proyecto será un proceso evolutivo como tal. Este documento puede ser susceptible a cambios a medida que se vayan agregando nuevas funcionalidades o requisitos al sistema.</p>
+<p>Uno de los principales propósitos de este documento es hacer una representación de las decisiones de disposición lógica y física de las partes del sistema; por tanto, es un diseño estratégico, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.</p>
+<p><br></p>
+ 
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="restricciones-principales">Restricciones Principales</h1>
+<p>Informamos de las restricciones que hacen parte del proyecto, y por tanto, a considera en el ejercicio de arquitectura del presente proyecto.</p>
+<p>Lista de restricciones de la migración SUI, 2023.</p>
 <ol type="1">
-<li>Ordered list item</li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-<li>Sub-item
-<ol type="i">
-<li>Sub-sub-item</li>
-</ol></li>
-</ol></li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-</ol></li>
+<li>Restricciones de hardware o software en servidores. Los equipos de infraestructura del proyecto actual a tener en cuenta en los diseños de la solución de esta Fase 2 serán los mismos de la anterior Fase 1. Esto es, los que están descritos en el anexo técnico del contrato del proyecto.</li>
+<li>Disponibilidad de recursos. Los recursos de implementación y validación de calidad de esta Fase del proyecto son los mismos a tener en cuenta en los diseños de la solución de esta Fase 2. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.</li>
+<li>Estándares. Los estándares seleccionados por la solución de este proyecto, (Fase 2, PGN Migración Funcional SIU, están determinados por el uso de las plataformas específicas determinadas por la implementación (desarrollo del software).</li>
+<li>Requerimientos de interoperabilidad. Los recursos de interoperabilidad y colaboración entre sistemas, módulos, submódulos y aplicaciones de terceros relacionados con esta Fase del proyecto son los mismos a tener en cuenta en los diseños de la solución de esta Fase 2. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.</li>
+<li>Requerimientos de protocolos o interfaces. Los recursos de red, y protocolos de comunicación o transporte de esta Fase del proyecto a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de los considerados en la anterior Fase 1. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.</li>
+<li>Seguridad. Las restricciones de seguridad del proyecto actual a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de las de la anterior Fase 1. Esto es, los que están descritos en el anexo técnico del contrato del proyecto.</li>
 </ol>
+<p><br></p>
+<h2 id="restricciones-secundarias">Restricciones Secundarias</h2>
+<p>Otras restricciones a detallar.</p>
+<ol type="1">
+<li>Repositorio de datos.</li>
+<li>Memoria, disco, CPU.</li>
+<li>Requerimientos de rendimiento.</li>
+</ol>
+<p><br></p>
+<h1 id="requisitos-de-arquitectura-no-funcional">Requisitos de Arquitectura (no funcional)</h1>
+<p>Entendemos como requisitos de arquitectura aquellos requerimientos no visibles pero estructurales, medibles, y que impactan al funcionamiento, desarrollo y mantenimiento de la solución migración SUI, objeto de este proyecto, OP 078-2023.</p>
+<p>Definiremos estos requisitos de la solución a tener en cuenta al momento del desarrollo.</p>
+<h2 id="requerimientos-generales">Requerimientos generales</h2>
+<ol type="1">
+<li><strong>Parametrización</strong>. Crear desarrollos parametrizables necesarios para permitir la administración de la información de uso general.</li>
+<li><strong>Interoperabilidad</strong>. Crear desarrollos de SUI interoperables con otros sistemas de información de la entidad según requerimientos de los procesos.</li>
+<li><strong>Diseño</strong>. Los desarrollos complementarios deben responder a los criterios de bajo acoplamiento y alta cohesión.</li>
+<li><strong>Reglas de negocio</strong>. Las soluciones deben disponer de todas las validaciones y controles que garanticen la calidad, seguridad y unicidad de la información.</li>
+<li>Para los casos que aplique, la solución debe contar con una integración con el servicio de correo de la Entidad.</li>
+<li>Todos los desarrollos complementarios serán en su totalidad propiedad de la entidad, para lo cual la entidad podrá modificar y/o actualizar a futuro los procesos modelados, acorde a las necesidades; por tanto, deberán entregarse los derechos intelectuales y patrimoniales como parte de la documentación y el código fuente que corresponda.</li>
+</ol>
+<div style="page-break-before: always;">
+
+</div>
+<h2 id="requisitos-de-arquitectura-no-funcional-particulares">Requisitos de Arquitectura (no funcional) Particulares</h2>
+<h3 id="extensibilidad-sui">Extensibilidad SUI</h3>
+<div id="tbl:requisito1-id" class="tablenos">
+<table id="tbl:requisito1-id">
+<caption><span>Tabla 1:</span> Requisito no. 1, Migración SUI, Flexibilidad. </caption>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Requisito</th>
+<th>Extensibilidad SUI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Descripción</td>
+<td>Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento.</td>
+</tr>
+<tr class="even">
+<td>Calidad sistémica</td>
+<td>La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="mantenibilidad-sui">Mantenibilidad SUI</h3>
+<div id="tbl:requisito2-id" class="tablenos">
+<table id="tbl:requisito2-id">
+<caption><span>Tabla 2:</span> Requisito no. 2. </caption>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Requisito</th>
+<th>Mantenibilidad SUI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Descripción</td>
+<td>Evitar las dependencia transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.</td>
+</tr>
+<tr class="even">
+<td>Calidad sistémica</td>
+<td>La mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="documento-de-arquitectura-migración-funcional-sui">Documento de Arquitectura Migración Funcional SUI</h1>
 <ul>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
+<li><a href="#patrón-de-diseño-línea-base-sui-pgn">Patrón de Diseño Línea Base SUI PGN</a>
+<ul>
+<li><a href="#lineabase.0.siu-applicación">Lineabase.0.SIU applicación</a></li>
+<li><a href="#lineabase.1.siu-componente">Lineabase.1.SIU componente</a></li>
+<li><a href="#lineabase.1a.siu-componentes.-infraestrcutura">Lineabase.1a.SIU componentes. infraestrcutura</a></li>
+<li><a href="#linebase.2.portal">Linebase.2.Portal</a></li>
+<li><a href="#riesgos.1.-migración-funcional">Riesgos.1. Migración funcional</a></li>
+</ul></li>
+<li><a href="#patrón-de-diseño-migración-sui-pgn">Patrón de Diseño Migración SUI PGN</a>
+<ul>
+<li><a href="#migracion.1a.siu-submódulos">Migracion.1a.SIU submódulos</a></li>
+<li><a href="#migracion.1c.siu-submódulos-componentes">Migracion.1c.SIU submódulos componentes</a></li>
+<li><a href="#migracion.1b.siu-submodulos-colaboración">Migracion.1b.SIU submodulos colaboración</a></li>
+</ul></li>
+<li><a href="#organización-cambios-arquitectura">Organización cambios arquitectura</a>
+<ul>
+<li><a href="#organización.-1n.-mapa-producto">Organización. 1n. Mapa producto</a></li>
+<li><a href="#organización.-1n.1.-mapa-producto-pgn.-relatoría">Organización. 1n.1. Mapa producto PGN. Relatoría</a></li>
+</ul></li>
+<li><a href="#arquitectura-de-seguridad,-sui-migración">Arquitectura de Seguridad, SUI Migración</a>
+<ul>
+<li><a href="#seguridad.-1.-requerimientos">Seguridad. 1. Requerimientos</a></li>
+<li><a href="#seguridad.-linebase.2.portal">Seguridad. Linebase.2.Portal</a></li>
+</ul></li>
 </ul>
-<p>subscript: H<sub>2</sub>O is a liquid</p>
-<p>superscript: 2<sup>10</sup> is 1024.</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode superscripts</a>⁰¹²³⁴⁵⁶⁷⁸⁹</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode subscripts</a>₀₁₂₃₄₅₆₇₈₉</p>
-<p>A long paragraph of text.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Putting each sentence on its own line has numerous benefits with regard to <a href="https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line">editing</a> and <a href="https://rhodesmill.org/brandon/2012/one-sentence-per-line/">version control</a>.</p>
-<p>Line break without starting a new paragraph by putting<br />
-two spaces at end of line.</p>
-<h2 id="document-organization">Document organization</h2>
-<p>Document section headings:</p>
-<h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<h4 id="heading-4">Heading 4</h4>
-<h5 id="heading-5">Heading 5</h5>
-<h6 id="heading-6">Heading 6</h6>
-<h3 class="center page_center" id="a-heading-centered-on-its-own-printed-page">A heading centered on its own printed page</h3>
-<!-- an arbitrary comment. visible in input, but not visible in output. -->
-<p>Horizontal rule:</p>
-<hr />
-<p><code>Heading 1</code>’s are recommended to be reserved for the title of the manuscript.</p>
-<p><code>Heading 2</code>’s are recommended for broad sections such as <em>Abstract</em>, <em>Methods</em>, <em>Conclusion</em>, etc.</p>
-<p><code>Heading 3</code>’s and <code>Heading 4</code>’s are recommended for sub-sections.</p>
-<h2 id="links">Links</h2>
-<p>Bare URL link: <a href="https://manubot.org" class="uri">https://manubot.org</a></p>
-<p><a href="https://manubot.org">Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah</a></p>
-<p><a href="https://manubot.org">Link with text</a></p>
-<p><a href="https://manubot.org" title="Manubot Homepage">Link with hover text</a></p>
-<p><a href="https://manubot.org">Link by reference</a></p>
-<h2 id="citations">Citations</h2>
-<p>Citation by DOI <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>]</span>.</p>
-<p>Citation by PubMed Central ID <span class="citation" data-cites="mSMVRkoc">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>]</span>.</p>
-<p>Citation by PubMed ID <span class="citation" data-cites="pubmed:30718888">[<a href="#ref-pubmed:30718888" role="doc-biblioref"><strong>pubmed:30718888?</strong></a>]</span>.</p>
-<p>Citation by Wikidata ID <span class="citation" data-cites="QhC8yJ7V">[<a href="#ref-QhC8yJ7V" role="doc-biblioref">3</a>]</span>.</p>
-<p>Citation by ISBN <span class="citation" data-cites="zBPP9YKu">[<a href="#ref-zBPP9YKu" role="doc-biblioref">4</a>]</span>.</p>
-<p>Citation by URL <span class="citation" data-cites="1GGGHdsew">[<a href="#ref-1GGGHdsew" role="doc-biblioref">5</a>]</span>.</p>
-<p>Citation by alias <span class="citation" data-cites="PZMP42Ak">[<a href="#ref-PZMP42Ak" role="doc-biblioref">6</a>]</span>.</p>
-<p>Multiple citations can be put inside the same set of brackets <span class="citation" data-cites="IhliSZDo PZMP42Ak zBPP9YKu">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>,<a href="#ref-zBPP9YKu" role="doc-biblioref">4</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">6</a>]</span>.
-Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO pubmed:30718888 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">6</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">7</a>,<a href="#ref-pubmed:30718888" role="doc-biblioref"><strong>pubmed:30718888?</strong></a>]</span>.</p>
-<p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
-<h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">1</a></p>
-<p>Figure <a href="#fig:wide-image">2</a></p>
-<p>Figure <a href="#fig:tall-image">3</a></p>
-<p>Figure <a href="#fig:vector-image">4</a></p>
-<p>Table <a href="#tbl:bowling-scores">1</a></p>
-<p>Equation <a href="#eq:regular-equation">1</a></p>
-<p>Equation <a href="#eq:long-equation">2</a></p>
-<h2 id="quotes-and-code">Quotes and code</h2>
-<blockquote>
-<p>Quoted text</p>
-</blockquote>
-<blockquote>
-<p>Quoted block of text</p>
-<p>Two roads diverged in a wood, and I—<br />
-I took the one less traveled by,<br />
-And that has made all the difference.</p>
-</blockquote>
-<p>Code <code>in the middle</code> of normal text, aka <code>inline code</code>.</p>
-<p>Code block with Python syntax highlighting:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> manubot.cite.doi <span class="im">import</span> expand_short_doi</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_expand_short_doi():</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    doi <span class="op">=</span> expand_short_doi(<span class="st">&quot;10/c3bp&quot;</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># a string too long to fit within page:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> doi <span class="op">==</span> <span class="st">&quot;10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah&quot;</span></span></code></pre></div>
-<p>Code block with no syntax highlighting:</p>
-<pre><code>Exporting HTML manuscript
-Exporting DOCX manuscript
-Exporting PDF manuscript</code></pre>
-<h2 id="figures">Figures</h2>
-<div id="fig:square-image" class="fignos">
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="patrón-de-diseño-línea-base-sui-pgn">Patrón de Diseño Línea Base SUI PGN</h1>
+<h2 id="lineabase.0.siu-applicación">Lineabase.0.SIU applicación</h2>
+<div id="fig:Lineabase.0.SIUapplicación" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 1: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
-Loaded from the latest version of image on GitHub.</figcaption>
+<img src="images/Lineabase.0.SIUapplicación.png" alt="Imagen 1: Diagram: Lineabase.0.SIU applicación" />
+<figcaption aria-hidden="true"><span>Imagen 1:</span> Diagram: Lineabase.0.SIU applicación</figcaption>
 </figure>
 </div>
-<div id="fig:wide-image" class="fignos">
-<figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 2: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>An image too wide to fit within page at full size.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
-</figure>
-</div>
-<div id="fig:tall-image" class="fignos">
-<figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 3: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 3:</span> <strong>A tall image with a specified height.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
-</figure>
-</div>
-<div id="fig:vector-image" class="fignos">
-<figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 4: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image. Note that if you want to export to Word (.docx), you need to download the image and reference it locally (e.g. content/images/vector.svg) instead of using a URL." />
-<figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
-The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
-White background specified to serve as a backdrop for transparent sections of the image.
-Note that if you want to export to Word (<code>.docx</code>), you need to download the image and reference it locally (e.g. <code>content/images/vector.svg</code>) instead of using a URL.</figcaption>
-</figure>
-</div>
-<h2 id="tables">Tables</h2>
-<div id="tbl:bowling-scores" class="tablenos">
-<table id="tbl:bowling-scores">
-<caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
-</caption>
+<p>Procuraduría General de la Nación, proyecto Migración SIU, 2023, Fase II. Línea base del sistema único de información (SUI en adelante) de la PGN. Presentación de componentes de software originales implementados en la Fase I del presente proyecto.</p>
+<h2 id="representación-arquitectónica">Representación Arquitectónica</h2>
+<p>Con una arquitectura orientada a servicios SUI recopila:</p>
+<ol type="1">
+<li>Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11</li>
+<li>API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD</li>
+<li>API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración</li>
+</ol>
+<h3 id="catálogo-de-elementos">Catálogo de Elementos</h3>
+<table>
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;"><em>Bowling Scores</em></th>
-<th style="text-align: center;">Jane</th>
-<th style="text-align: center;">John</th>
-<th style="text-align: center;">Alice</th>
-<th style="text-align: center;">Bob</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Game 1</td>
-<td style="text-align: center;">150</td>
-<td style="text-align: center;">187</td>
-<td style="text-align: center;">210</td>
-<td style="text-align: center;">105</td>
+<td style="text-align: left;"><strong>Application Collaboration</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Game 2</td>
-<td style="text-align: center;">98</td>
-<td style="text-align: center;">202</td>
-<td style="text-align: center;">197</td>
-<td style="text-align: center;">102</td>
+<td style="text-align: left;"><strong>Application Collaboration</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Game 3</td>
-<td style="text-align: center;">123</td>
-<td style="text-align: center;">180</td>
-<td style="text-align: center;">238</td>
-<td style="text-align: center;">134</td>
+<td style="text-align: left;"><strong>App</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> node Js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App PGN Móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App PGN Web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Config</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Punto acceso público</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;">URL tipo C<br>HTTP</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
+<h2 id="lineabase.1.siu-componente">Lineabase.1.SIU componente</h2>
+<div id="fig:Lineabase.1.SIUcomponente" class="fignos">
+<figure>
+<img src="images/Lineabase.1.SIUcomponente.png" style="width:5.89in" alt="Imagen 2: Diagram: Lineabase.1.SIU componente" />
+<figcaption aria-hidden="true"><span>Imagen 2:</span> Diagram: Lineabase.1.SIU componente</figcaption>
+</figure>
 </div>
-<div id="tbl:constant-digits" class="tablenos">
-<table id="tbl:constant-digits">
-<caption><span>Table 2:</span> A table too wide to fit within page.
-</caption>
+<p>Distribución de los servicios y paquetes que integran la aplicación de SUI.</p>
+<p>Cuatro paquetes con tecnologías respectivas</p>
+<ol type="1">
+<li>Angular 11 (Web)</li>
+<li>API Transaccional (Node Js)</li>
+<li>API Config (C#)</li>
+<li>Persistencia (SQL)</li>
+</ol>
+<p>Asuntos de la Migración:</p>
+<ul>
+<li>Estrategia CMS central</li>
+<li>Motor de búsqueda</li>
+<li>Estatego como BI</li>
+<li>Conciliación y Doku</li>
+<li>Gestión de sesiones / caducidad</li>
+</ul>
+<h3 id="catálogo-de-elementos-1">Catálogo de Elementos</h3>
+<table>
 <colgroup>
-<col style="width: 5%" />
-<col style="width: 20%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 34%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Digits 1-33</th>
-<th style="text-align: left;">Digits 34-66</th>
-<th style="text-align: left;">Digits 67-99</th>
-<th style="text-align: left;">Ref.</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">pi</td>
-<td style="text-align: left;">3.14159265358979323846264338327950</td>
-<td style="text-align: left;">288419716939937510582097494459230</td>
-<td style="text-align: left;">781640628620899862803482534211706</td>
-<td style="text-align: left;"><a href="https://www.piday.org/million/"><code>piday.org</code></a></td>
+<td style="text-align: left;"><strong>Persistencia</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">e</td>
-<td style="text-align: left;">2.71828182845904523536028747135266</td>
-<td style="text-align: left;">249775724709369995957496696762772</td>
-<td style="text-align: left;">407663035354759457138217852516642</td>
-<td style="text-align: left;"><a href="https://apod.nasa.gov/htmltest/gifcity/e.2mil"><code>nasa.gov</code></a></td>
+<td style="text-align: left;"><strong>App</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> node Js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App PGN Móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App PGN Web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Config</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador admin</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador frontal mvl</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador frontal web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador funcional</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Modelo (neg)</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Puerto datos 1</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Puerto datos 2</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Seguridad</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Transacciones</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Utilitario</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> no-sql<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> html<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de aplicación (runtime)</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>API externas</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Archivos Compartidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CDN Contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Doku (gest. doc.)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Identidades</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 3</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>ccccc Proveedores contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mensaje: JSON</strong></td>
+<td style="text-align: left;">data-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>PGN SIU</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Administrativos</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Funcionales</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Ingeniería</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
+<h2 id="lineabase.1a.siu-componentes.-infraestrcutura">Lineabase.1a.SIU componentes. infraestrcutura</h2>
+<div id="fig:Lineabase.1a.SIUcomponentes.infraestrcutura" class="fignos">
+<figure>
+<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 3: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
+<figcaption aria-hidden="true"><span>Imagen 3:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
+</figure>
 </div>
-<div id="tbl:092f4d48-b46d-478b-8ee6-5fe266b8869a" class="tablenos">
-<table id="tbl:">
-<caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
-</caption>
+<p>Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración.</p>
+<ul>
+<li>Servidor de Canales (App PGN web y móvil)</li>
+<li>Servidor Web App (App SUI)</li>
+<li>Servidor Lappiz (Config SUI)</li>
+<li>Servidor BDD App (Transaccional)</li>
+<li>Servidor BDD Config (Configuración)</li>
+</ul>
+<h3 id="catálogo-de-elementos-2">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Colors</strong> <!-- $colspan="2" --></th>
-<th style="text-align: center;"></th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><strong>Size</strong></td>
-<td style="text-align: center;"><strong>Text Color</strong></td>
-<td style="text-align: center;"><strong>Background Color</strong></td>
+<td style="text-align: left;"><strong>Persistencia</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">big</td>
-<td style="text-align: center;">blue</td>
-<td style="text-align: center;">orange</td>
+<td style="text-align: left;"><strong>App</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> node Js<br></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">small</td>
-<td style="text-align: center;">black</td>
-<td style="text-align: center;">white</td>
+<td style="text-align: left;"><strong>App PGN Móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App PGN Web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Config</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador admin</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador frontal mvl</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador frontal web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador funcional</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Modelo (neg)</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Puerto datos 1</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Puerto datos 2</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Seguridad</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Transacciones</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Utilitario</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> no-sql<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> html<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de aplicación (runtime)</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>API externas</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Archivos Compartidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CDN Contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Doku (gest. doc.)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Identidades</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 3</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>ccccc Proveedores contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mensaje: JSON</strong></td>
+<td style="text-align: left;">data-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Infraestructura SUI</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>PGN SIU</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor BDD App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores &gt; 2 Ghz<br>Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log G: 510 GB, TempDB G: 63.6 GB.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor BDD Config</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores &gt; 2 Ghz<br>Discos SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB G: 30 GB.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor Lappiz </strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores &gt; 2 Ghz<br>Discos SO C: 120 GB, D: 16 GB.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor Web App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8 GB. CPU 64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor Web Canales</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8 GB. CPU 64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
+<h2 id="linebase.2.portal">Linebase.2.Portal</h2>
+<div id="fig:Linebase.2.Portal" class="fignos">
+<figure>
+<img src="images/Linebase.2.Portal.png" alt="Imagen 4: Diagram: Linebase.2.Portal" />
+<figcaption aria-hidden="true"><span>Imagen 4:</span> Diagram: Linebase.2.Portal</figcaption>
+</figure>
 </div>
-<h2 id="equations">Equations</h2>
-<p>A LaTeX equation:</p>
-<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(1)</span></span> </p>
-<p>An equation too long to fit within page:</p>
-<p><span id="eq:long-equation" class="eqnos"><span class="math display">\[x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9\]</span><span class="eqnos-number">(2)</span></span> </p>
-<h2 id="special">Special</h2>
-<p><i class="fas fa-exclamation-triangle"></i> <span class="semibold">WARNING</span> <em>The following features are only supported and intended for <code>.html</code> and <code>.pdf</code> exports.</em>
-<em>Journals are not likely to support them, and they may not display correctly when converted to other formats such as <code>.docx</code>.</em></p>
-<p><a href="https://manubot.org" class="button" title="Manubot Homepage">Link styled as a button</a></p>
-<p>Adding arbitrary HTML attributes to an element using Pandoc’s attribute syntax:</p>
-<div id="some_id_1" class="some_class" style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true">
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.</p>
+<p>El portal es el conjunto de los elementos físicos y lógicos necesarios para la implementación de la granja de servidores de SharePoint Server 2019 para el portal de la PROCURADURIA.</p>
+<ul>
+<li>Servidores Web Front End</li>
+<li>Servidores de Aplicaciones</li>
+<li>Servidores de SQL Server</li>
+</ul>
+<h3 id="catálogo-de-elementos-3">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Application Collaboration Sharepoint</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor aplicaciones Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor datos Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor web Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Application Interface</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="riesgos.1.-migración-funcional">Riesgos.1. Migración funcional</h2>
+<div id="fig:Riesgos.1.Migraciónfuncional" class="fignos">
+<figure>
+<img src="images/Riesgos.1.Migraciónfuncional.png" alt="Imagen 5: Diagram: Riesgos.1. Migración funcional" />
+<figcaption aria-hidden="true"><span>Imagen 5:</span> Diagram: Riesgos.1. Migración funcional</figcaption>
+</figure>
 </div>
-<p>Adding arbitrary HTML attributes to an element with the Manubot <code>attributes</code> plugin (more flexible than Pandoc’s method in terms of which elements you can add attributes to):</p>
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" --></p>
-<p>Available background colors for text, images, code, banners, etc:</p>
-<p><code class="white">white</code>
-<code class="lightgrey">lightgrey</code>
-<code class="grey">grey</code>
-<code class="darkgrey">darkgrey</code>
-<code class="black">black</code>
-<code class="lightred">lightred</code>
-<code class="lightyellow">lightyellow</code>
-<code class="lightgreen">lightgreen</code>
-<code class="lightblue">lightblue</code>
-<code class="lightpurple">lightpurple</code>
-<code class="red">red</code>
-<code class="orange">orange</code>
-<code class="yellow">yellow</code>
-<code class="green">green</code>
-<code class="blue">blue</code>
-<code class="purple">purple</code></p>
-<p>Using the <a href="https://fontawesome.com/">Font Awesome</a> icon set:</p>
-<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
-<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></p>
-<p><i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i></p>
-<p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Light Grey Banner</strong><br>
-useful for <em>general information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightblue"><i class="fas fa-info-circle fa-lg"></i> <strong>Blue Banner</strong><br>
-useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
-useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<h2 class="page_break_before" id="references">References</h2>
+<p>Riesgos de la migración funcional:</p>
+<ul>
+<li>RSG1. Estrategia CMS central</li>
+<li>RSG2. Motor de búsqueda</li>
+<li>RSG3. Estatego como BI</li>
+<li>RSG4. Conciliación y Doku</li>
+<li>RSG5. Gestión de sesiones / caducidad</li>
+</ul>
+<h3 id="acciones-de-mitigación">Acciones de Mitigación</h3>
+<p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del SCM central (sharepoint). La PGN debe decidir si o no a la acción propuesta.</p>
+<p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del motor de búsqueda compartido (sharepoint). La PGN debe decidir si o no a la acción propuesta.</p>
+<p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: diseño de solución de inteligencia de negocio (Power BI). La PGN debe decidir si o no a la acción propuesta.</p>
+<p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: ubicar la lógica, los flujos, y los datos misionales dentro del SIU. La PGN debe decidir si o no a la acción propuesta.</p>
+<p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: facilitar la administración de seguridad en un solo lugar (distinto de localizarla en las aplicaciones web). La PGN debe decidir si o no a la acción propuesta.</p>
+<h3 id="catálogo-de-elementos-4">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>RSG1. Estrategia CMS central</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Establecer desde el principio el gestor de contenidos compartido que los módulos del SUI migrados van a usar.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RSG2. Motor de búsqueda compartido</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Establecer desde el principio el motor de búsqueda de conteidos compartido para los módulos del SUI migrados.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RSG3. Estatego como BI</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Definir la arquitectura de Estratego migrado: puede ser una solución de BI simple, o puede ser una aplicación web tradicional.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RSG4. Conciliación sin Doku</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Definir la ubicación de los componentes misionales de Conciliación Administrativa (SIU). Debe estar fuera de Doku.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RSG5. Gestión de sesiones / caducidad</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Establecer desde el principio el motor de búsqueda de conteidos compartido para los módulos del SUI migrados.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Riesgos Migración Funcional SIU</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="patrón-de-diseño-migración-sui-pgn">Patrón de Diseño Migración SUI PGN</h1>
+<h2 id="migracion.1a.siu-submódulos">Migracion.1a.SIU submódulos</h2>
+<div id="fig:Migracion.1a.SIUsubmódulos" class="fignos">
+<figure>
+<img src="images/Migracion.1a.SIUsubmódulos.png" alt="Imagen 6: Diagram: Migracion.1a.SIU submódulos" />
+<figcaption aria-hidden="true"><span>Imagen 6:</span> Diagram: Migracion.1a.SIU submódulos</figcaption>
+</figure>
+</div>
+<p>Identificación de submódulos del Sistema Único de Información (SUI) de la PGN.</p>
+<p>Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
+<p>Los submódulos del SUI, tal como están presentados, reúnen a las partes que tienen el mismo rol en favor de la coherencia. Así mismo, estos pueden ser intercambiados o ampliados sin perjuicio del SUI gracias a las interfaces de unión (en favor de la extensibilidad).</p>
+<p>Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir las exigencias de los componentes misionales del SUI.</p>
+<p>Los submódulos identificados tienen los siguientes roles para el SUI migrado:</p>
+<ol type="1">
+<li>cc:Presentación</li>
+<li>cc:Servicios de aplicación</li>
+<li>cc:Portales y canales</li>
+<li>cc:Administración y configuración</li>
+<li>cc:Almacenamiento</li>
+</ol>
+<h3 id="requerimientos-asociados-a-los-submódulos">Requerimientos Asociados a los Submódulos</h3>
+<p>La disposición de los módulos y submódulos presentada, denominada SUI Migración en adelante, facilita la focalización de los requerimientos encontrados en el levantamiento realizado por el actual proyecto. Así, por ejemplo, los requerimientos funcionales se encuentran concentrados en el submódulo de presentación (ver imagen).</p>
+<h3 id="catálogo-de-elementos-5">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:Administración</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>cc:Almacenamiento</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:PGN SUI (misional)</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>cc:Portales y canales</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;">Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:Presentación</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;">Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>cc:Servicios de aplicación</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;">Submódulo de servicios utilitarios que sirven al SUI. Servicios variados que cumplen roles facilitadores de las actividades misionales del SUI. Ejemplos de estos servicios son los de gestión documental, implementado por Doku en el contexto de PGN.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cliente PGN</strong></td>
+<td style="text-align: left;">business-actor</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Funcionario PGN</strong></td>
+<td style="text-align: left;">business-actor</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Administrativos</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Funcionales</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Ingeniería</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Misionales</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migracion.1c.siu-submódulos-componentes">Migracion.1c.SIU submódulos componentes</h2>
+<div id="fig:Migracion.1c.SIUsubmóduloscomponentes" class="fignos">
+<figure>
+<img src="images/Migracion.1c.SIUsubmóduloscomponentes.png" alt="Imagen 7: Diagram: Migracion.1c.SIU submódulos componentes" />
+<figcaption aria-hidden="true"><span>Imagen 7:</span> Diagram: Migracion.1c.SIU submódulos componentes</figcaption>
+</figure>
+</div>
+<p>Presentación de los componentes internos de los submódulos del sistema único de información migración PGN. Organización intena de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
+<p>La organización de componentes de migración SUI facilita focalizar la selección de tecnologeias. Los componentes internos y tecnologías elegidas son las siguientes</p>
+<ol type="1">
+<li>Presentación: Angular 11 (Web)</li>
+<li>PGN SUI: API Transaccional (Node Js)</li>
+<li>Administración: API Config (C#)</li>
+<li>Persistencia: (SQL)</li>
+</ol>
+<p>Los submódulos del SUI, tal como están presentados, reúnen a las partes que tienen el mismo rol en favor de la coherencia. Así mismo, estos pueden ser intercambiados o ampliados sin perjuicio del SUI gracias a las interfaces de unión (en favor de la extensibilidad).</p>
+<p>Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir las exigencias de los componentes misionales del SUI.</p>
+<h3 id="catálogo-de-elementos-6">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>App</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> node Js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App PGN Móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App PGN Web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Config</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador admin</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador frontal mvl</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador frontal web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador funcional</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Modelo (neg)</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Puerto datos 1</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Puerto datos 2</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Seguridad</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor aplicaciones Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor datos Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor web Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Transacciones</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Utilitario</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> no-sql<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> html<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Interface</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de aplicación (runtime)</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>API externas</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Archivos Compartidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>CDN Contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Doku (gest. doc.)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Identidades</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 3</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Office</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>ccccc Proveedores contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mensaje: JSON</strong></td>
+<td style="text-align: left;">data-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Administración</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Almacenamiento</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>PGN SIU</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Portales</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Presentación</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servicios de aplicación</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">Submódulo de servicios utilitarios que sirven al SUI. Servicios variados que cumplen roles facilitadores de las actividades misionales del SUI. Ejemplos de estos servicios son los de gestión documental, implementado por Doku en el contexto de PGN.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Administrativos</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Funcionales</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Ingeniería</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Misionales</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migracion.1b.siu-submodulos-colaboración">Migracion.1b.SIU submodulos colaboración</h2>
+<div id="fig:Migracion.1b.SIUsubmoduloscolaboración" class="fignos">
+<figure>
+<img src="images/Migracion.1b.SIUsubmoduloscolaboración.png" alt="Imagen 8: Diagram: Migracion.1b.SIU submodulos colaboración" />
+<figcaption aria-hidden="true"><span>Imagen 8:</span> Diagram: Migracion.1b.SIU submodulos colaboración</figcaption>
+</figure>
+</div>
+<p>Patrón de Distribución y Colaboración estándar para el SUI.</p>
+<p>La colaboración y comunicación de los componentes internos del SUI (grupo PFN SUI, en el diagrama) está mediada por interfaces. Estas son provistas por el grupo de componentes misionales, PGN SUI, hacia los submódulos externos. La intención es mantener reducido y controlado el número de interfaces.</p>
+<p>La colaboración entre el SUI Migración con sistemas externos puede darse mediante buses de datos empresarial, sin perjuicio del patrón de comunicación estadar descrito en el diagrama.</p>
+<h3 id="catálogo-de-elementos-7">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:Almacenamiento</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>cc:Almacenamiento</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:PGN SUI (misional)</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>cc:PGN SUI (misional)</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:Portales y canales</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;">Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>cc:Portales y canales</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;">Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="organización-cambios-arquitectura">Organización cambios arquitectura</h1>
+<h2 id="organización.-1n.-mapa-producto">Organización. 1n. Mapa producto</h2>
+<div id="fig:Organización.1n.Mapaproducto" class="fignos">
+<figure>
+<img src="images/Organización.1n.Mapaproducto.png" style="width:3.14in" alt="Imagen 9: Diagram: Organización. 1n. Mapa producto" />
+<figcaption aria-hidden="true"><span>Imagen 9:</span> Diagram: Organización. 1n. Mapa producto</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-8">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Deliverable: (tiempo)</strong></td>
+<td style="text-align: left;">deliverable</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Tiempo</strong></td>
+<td style="text-align: left;">gap</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Características</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hoja ruta del producto</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Hitos mercado</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="organización.-1n.1.-mapa-producto-pgn.-relatoría">Organización. 1n.1. Mapa producto PGN. Relatoría</h2>
+<div id="fig:Organización.1n.1.MapaproductoPGN.Relatoría" class="fignos">
+<figure>
+<img src="images/Organización.1n.1.MapaproductoPGN.Relatoría.png" alt="Imagen 10: Diagram: Organización. 1n.1. Mapa producto PGN. Relatoría" />
+<figcaption aria-hidden="true"><span>Imagen 10:</span> Diagram: Organización. 1n.1. Mapa producto PGN. Relatoría</figcaption>
+</figure>
+</div>
+<p>Organización y distribución de las características técnicas y funcionales del módulo de Relatoría.</p>
+<p>Características principales:
+* Utilización de metadatos
+* Búsqueda de contenido (intradocumental y por metadatos)
+* Procesos de recolección y sincronización de contenidos</p>
+<p>De arriba a abajo:
+1. Fila 1, planificación de espacios de trabajo (iteraciones, para este caso) restringido al alcance del proyecto Migración PGN 2023.
+1. Debajo, lo hitos importantes organizados en el tiempo.
+1. Fila 3. Evolución de las características en los aspectos funcionales, técnico, hardware y software del módulo Relatoría de PGN.
+1. FInalmente, fila final del diagrama, la entrega en el tiempo de las capacidades del módulo de relatoría (épicas, para el caso de Scrum). La prioridad de liberación de estas la determina el equipo funcional de este módulo de la PGN.</p>
+<p><br></p>
+<h3 id="catálogo-de-elementos-9">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Administración de contenidos</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Componente de comunicación segura SIU</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Componente de autenticación SIU</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Componente de autorización SIU</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Funcionalidades de búsqueda</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Funcionalidades de descripción de contenidos</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Integración API CMS</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Motor de búsqueda</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Proceso de organización de contenidos</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Proceso de recolección de contenidos</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Proceso de sincronización automática de contenidos</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Publicar contenidos</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Deliverable: (tiempo)</strong></td>
+<td style="text-align: left;">deliverable</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Autenticación</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> seguridad<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Autorización</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> seguridad<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Búsqueda</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Características</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Contenidos</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Descripción (metatada)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Indexación</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Integridad</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> seguridad<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Recolección</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sincronización (actualizcn)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hoja ruta del producto</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Adopción, v1.2</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Búsqueda de contenidos. Relatoría v0.1</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Despliegue Relatoría v1.2</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Gestión contenidos. Rltría v1.0</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Hitos mercado</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Organización contenidos. Rltría v0.5</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Seguridad. Rltría v0.9</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 1</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 1</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 2</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 2</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 3</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 3</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 4</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 4</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 5</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 5</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 6</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 6</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 7</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 7</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="arquitectura-de-seguridad-sui-migración">Arquitectura de Seguridad, SUI Migración</h1>
+<h2 id="seguridad.-1.-requerimientos">Seguridad. 1. Requerimientos</h2>
+<div id="fig:Seguridad.1.Requerimientos" class="fignos">
+<figure>
+<img src="images/Seguridad.1.Requerimientos.png" alt="Imagen 11: Diagram: Seguridad. 1. Requerimientos" />
+<figcaption aria-hidden="true"><span>Imagen 11:</span> Diagram: Seguridad. 1. Requerimientos</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-10">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:Administración</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>cc:PGN SUI (misional)</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>interfaz</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG1</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Las soluciones deben dar cumplimiento a las políticas institucionales del sistema de gestión de seguridad de la información establecidas por la entidad que busca garantizar la confidencialidad, integridad y disponibilidad de la información que se genera, procesa, almacena y/o transmite en los sistemas de Información de la Entidad.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG10</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe incluir un mecanismo de cifrado de los datos que se transportan entre los diferentes componentes tecnológicos y los datos sensibles de la base de datos que representen un alto nivel de confidencialidad.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG12</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe contemplar el cumplimiento de la normatividad vigente en cuanto a protección de datos personales y debe permitir el manejo de excepciones.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG13</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Para los casos que aplique se debe permitir el manejo de certificados y/o firmas digitales en los documentos que así se definan para efectos de aprobación y digitalización.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG15</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe funcionar sobre protocolo SSL (certificados internos de la entidad cuando los sistemas de información sean internas y certificados validos públicamente cuando los sistemas de información estén expuestas a internet).</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG16</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe entregar un procedimiento para el respaldo de la información de acuerdo con las necesidades de la entidad.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG17</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe incluir uso de criptografía para transacciones y/o campos sensibles según lo indiquen las normas vigentes y las necesidades específicas del negocio de acuerdo como lo determine la entidad.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG18</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">“1. Debe contemplar un modelo de datos que garantice base de datos única para evitar que se pueda presentar duplicidad de información.”</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG18</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe contemplar un modelo de datos que garantice base de datos única para evitar que se pueda presentar duplicidad de información.,id-d1a6b80e7a6c4538b922f333f4d7ec7a,requirement<br>RQRSEG11,“1. A nivel de la base de datos debe poder definirse reglas de validación de integridad de datos (unicidad, referencial y negocio).</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG19</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. En la información confidencial solo puede ser consultada por los perfiles autorizados e igualmente restringir documentos de consulta según los privilegios o permisos asociados.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG2</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Las soluciones de automatización de procesos a implementar deben permitir la Gestión de Seguridad de Usuarios, grupos de usuarios y asignación de Roles y perfiles de usuarios, permitiendo asociar las acciones disponibles en la solución con respecto a roles de usuario, permitiendo parametrizar las funcionalidades que cada actor puede usar en la solución.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG21</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe cerrar las transacciones luego de máximo 10 minutos de inactividad. ““”</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG22</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe incluir controles de bloqueo de cuenta después de un máximo de 5 intentos erróneos a fin de evitar ataques de fuerza bruta.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG24</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe cumplir con todos los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG25</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">“1. Debe incluir un mecanismo de cifrado de los datos que se transportan entre los diferentes componentes tecnológicos y los datos sensibles de la base de datos que representen un alto nivel de confidencialidad.”</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG26</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">“1. Para los casos que aplique se debe permitir el manejo de certificados o firmas digitales en los documentos que así se definan para efectos de aprobación y digitalización.”</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG27</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">“1. Debe contemplar las prácticas de desarrollo seguro de aplicaciones y/o implementación segura de productos, para su naturaleza Web based.”</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG28</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">“1. A nivel de la base de datos debe poder definirse reglas de validación de integridad de datos (unicidad, referencial y negocio).”</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG29</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">“1. Debe evidenciar el resultado positivo frente apruebas de ethical hacking, análisis de vulnerabilidades, carga, estrés y desempeño antes de la puesta en operación de acuerdo con los lineamientos de la entidad.”</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG3</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Un usuario puede estar asociado a uno o más roles, de tal manera que los menús de navegación de la solución se muestran o despliegan dependiendo de las acciones asociadas a cada rol de usuario, permitiendo así que cuando el usuario es autenticado correctamente, la solución verifica los roles que tiene activos para otorgarle únicamente las acciones autorizadas.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG4</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. El diseño de la solución debe definir los criterios necesarios para asegurar la trazabilidad y auditoría sobre las acciones de creación, actualización, modificación o borrado de los componentes de información, de tal manera que la solución debe permitirle al administrador de la solución parametrizar las tablas y eventos que pueden auditarse.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG5</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Las soluciones deben tener en cuenta mecanismos que aseguren el registro histórico para poder mantener la trazabilidad de las acciones realizadas por los usuarios, contemplando el registro de auditoría que contiene información de fecha y hora, identificación del registro, tabla afectada, descripción del evento, tipo de evento, usuario que realiza la acción, identificación de sesión y dirección IP del usuario que efectuó la transacción.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG6</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. La solución debe proveer una consulta que permita a un usuario con los privilegios asignados, consultar los registros de auditoría, aplicando criterios de filtro (usuario, maquina, rango de fechas y tipo de operación).</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG7</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Las soluciones deben integrarse con LDAP – (Lightweight Directory Access Protocol) para los procesos de inicio de sesión y autenticación. La solución debe soportar la integración Nativa con Active Directory de Microsoft. Para usuarios externos el mecanismo de autorización, autenticación y acceso será controlado a través del modelo de seguridad de la solución (no habrá autenticación para usuarios externos).</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>RQRSEG8</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Las soluciones deben cumplir con los lineamientos de seguridad relacionados a su utilización a través de redes públicas y privadas, garantizando la confidencialidad e integridad de la información y acceso a ella.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RQRSEG9</strong></td>
+<td style="text-align: left;">requirement</td>
+<td style="text-align: left;">1. Debe evidenciar que, a través de pruebas de vulnerabilidad, garantiza la seguridad de la información. Estas pruebas deben suministrar evidencia de que se usaron umbrales de seguridad para establecer niveles mínimos aceptables de calidad de la seguridad y de la privacidad.</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="seguridad.-linebase.2.portal">Seguridad. Linebase.2.Portal</h2>
+<div id="fig:Seguridad.Linebase.2.Portal" class="fignos">
+<figure>
+<img src="images/Seguridad.Linebase.2.Portal.png" alt="Imagen 12: Diagram: Seguridad. Linebase.2.Portal" />
+<figcaption aria-hidden="true"><span>Imagen 12:</span> Diagram: Seguridad. Linebase.2.Portal</figcaption>
+</figure>
+</div>
+<p>El portal es el conjunto de los elementos físicos y lógicos necesarios para la implementación de la granja de servidores de SharePoint Server 2019 para el portal de la PROCURADURIA.</p>
+<ul>
+<li>Servidores Web Front End</li>
+<li>Servidores de Aplicaciones</li>
+<li>Servidores de SQL Server</li>
+</ul>
+<h3 id="catálogo-de-elementos-11">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Application Collaboration Sharepoint</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Directivas de Aplicaciones.</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Directivas de acceso.</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Directivas de proteccion de aplicaciones.</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Directivas de riesgos de protección. </strong>*</td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Requiere MFA </strong>*</td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Requiere inicio de sesión.</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor aplicaciones Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor datos Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor web Sharepoint</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Application Interface</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><code>Generated on: Wed Sep 13 2023 23:06:23 GMT-0500 (COT)</code></p>
+<h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
+<ol type="1">
+<li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
+<li>Administrar los Perfiles de acceso por rol: Esta funcionalidad permitirá configurar a que funcionalidades u opciones de la solución puede entrar un usuario con un rol específico.
+Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir configurar, activar, desactivar usuarios de las soluciones desarrolladas.</li>
+<li>Para los casos que aplique se debe asociar el desarrollo con el mecanismo de Firmas (digital, electrónica o mecánica): Esta funcionalidad debe permitir configurar los usuarios que tienen permitida la aprobación de documentos desde la solución implementada, a través del tipo de firma que corresponda.</li>
+<li>Administrar los Permisos de acceso: Esta funcionalidad permite definir específicamente a que servicios de la solución puede ingresar un usuario (CRUD).</li>
+<li>En los desarrollos se debe contar con un módulo de auditoría que permita generar consultas para conocer quién y cuándo se ha realizado una actuación determinada dentro de procesos críticos, almacenando el código del usuario la actuación, la acción, la fecha, la hora, y la dirección IP de la máquina.</li>
+<li>Las soluciones deben permitir la configuración de permisos de consulta con diferentes alcances para cada tipo de usuario.</li>
+<li>Desde la interfaz de usuario se debe poder crear, modificar o inactivar usuarios, perfiles o roles, permisos a las diferentes funcionalidades de la solución.</li>
+<li>Las soluciones deben permitir la definición de varios tipos de usuario.</li>
+<li>Las soluciones deben permitir la parametrización de los consecutivos que maneja la entidad para los diferentes documentos generados por las soluciones.</li>
+<li>Debe permitir parametrizar la vinculación del consecutivo a un documento en forma manual o automática.</li>
+<li>Las soluciones deben permitir que se configure la autenticación de forma interna integrándose con LDAP el acceso de los usuarios y actores de las diferentes dependencias de la entidad que interactúen con los demás sistemas.</li>
+</ol>
+<p><br></p>
+<h2 id="requerimientos-de-seguridad">Requerimientos de Seguridad</h2>
+<ol type="1">
+<li>Las soluciones deben dar cumplimiento a las políticas institucionales del sistema de gestión de seguridad de la información establecidas por la entidad que busca garantizar la confidencialidad, integridad y disponibilidad de la información que se genera, procesa, almacena y/o transmite en los sistemas de Información de la Entidad.</li>
+<li>Las soluciones de automatización de procesos a implementar deben permitir la Gestión de Seguridad de Usuarios, grupos de usuarios y asignación de Roles y perfiles de usuarios, permitiendo asociar las acciones disponibles en la solución con respecto a roles de usuario, permitiendo parametrizar las funcionalidades que cada actor puede usar en la solución.</li>
+<li>Un usuario puede estar asociado a uno o más roles, de tal manera que los menús de navegación de la solución se muestran o despliegan dependiendo de las acciones asociadas a cada rol de usuario, permitiendo así que cuando el usuario es autenticado correctamente, la solución verifica los roles que tiene activos para otorgarle únicamente las acciones autorizadas.</li>
+<li>El diseño de la solución debe definir los criterios necesarios para asegurar la trazabilidad y auditoría sobre las acciones de creación, actualización, modificación o borrado de los componentes de información, de tal manera que la solución debe permitirle al administrador de la solución parametrizar las tablas y eventos que pueden auditarse.</li>
+<li>Las soluciones deben tener en cuenta mecanismos que aseguren el registro histórico para poder mantener la trazabilidad de las acciones realizadas por los usuarios, contemplando el registro de auditoría que contiene información de fecha y hora, identificación del registro, tabla afectada, descripción del evento, tipo de evento, usuario que realiza la acción, identificación de sesión y dirección IP del usuario que efectuó la transacción.</li>
+<li>La solución debe proveer una consulta que permita a un usuario con los privilegios asignados, consultar los registros de auditoría, aplicando criterios de filtro (usuario, maquina, rango de fechas y tipo de operación).</li>
+<li>Las soluciones deben integrarse con LDAP – (Lightweight Directory Access Protocol) para los procesos de inicio de sesión y autenticación. La solución debe soportar la integración Nativa con Active Directory de Microsoft. Para usuarios externos el mecanismo de autorización, autenticación y acceso será controlado a través del modelo de seguridad de la solución (no habrá autenticación para usuarios externos).</li>
+<li>Las soluciones deben cumplir con los lineamientos de seguridad relacionados a su utilización a través de redes públicas y privadas, garantizando la confidencialidad e integridad de la información y acceso a ella.</li>
+<li>Debe evidenciar que, a través de pruebas de vulnerabilidad, garantiza la seguridad de la información. Estas pruebas deben suministrar evidencia de que se usaron umbrales de seguridad para establecer niveles mínimos aceptables de calidad de la seguridad y de la privacidad.</li>
+<li>Debe incluir un mecanismo de cifrado de los datos que se transportan entre los diferentes componentes tecnológicos y los datos sensibles de la base de datos que representen un alto nivel de confidencialidad.</li>
+<li>A nivel de la base de datos debe poder definirse reglas de validación de integridad de datos (unicidad, referencial y negocio).</li>
+<li>Debe contemplar el cumplimiento de la normatividad vigente en cuanto a protección de datos personales y debe permitir el manejo de excepciones.</li>
+<li>Para los casos que aplique se debe permitir el manejo de certificados y/o firmas digitales en los documentos que así se definan para efectos de aprobación y digitalización.</li>
+<li>Debe contemplar las prácticas de desarrollo seguro de aplicaciones y/o implementación segura de productos, para su naturaleza Web based.</li>
+<li>Debe funcionar sobre protocolo SSL (certificados internos de la entidad cuando los sistemas de información sean internas y certificados validos públicamente cuando los sistemas de información estén expuestas a internet).</li>
+<li>Debe entregar un procedimiento para el respaldo de la información de acuerdo con las necesidades de la entidad.</li>
+<li>Debe incluir uso de criptografía para transacciones y/o campos sensibles según lo indiquen las normas vigentes y las necesidades específicas del negocio de acuerdo como lo determine la entidad.</li>
+<li>Debe contemplar un modelo de datos que garantice base de datos única para evitar que se pueda presentar duplicidad de información.</li>
+<li>En la información confidencial solo puede ser consultada por los perfiles autorizados e igualmente restringir documentos de consulta según los privilegios o permisos asociados.</li>
+<li>A nivel de la base de datos debe poder definirse reglas de validación de integridad de datos (unicidad, referencial y negocio).</li>
+<li>Debe cerrar las transacciones luego de máximo 10 minutos de inactividad.</li>
+<li>Debe incluir controles de bloqueo de cuenta después de un máximo de 5 intentos erróneos a fin de evitar ataques de fuerza bruta.</li>
+<li>Debe evidenciar el resultado positivo frente apruebas de ethical hacking, análisis de vulnerabilidades, carga, estrés y desempeño antes de la puesta en operación de acuerdo con los lineamientos de la entidad.</li>
+<li>Debe cumplir con todos los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet”.</li>
+</ol>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<div class="line-block"><strong>Versión</strong> del producto 1.c65edb5 de 15 Sep 2023</div>
+<div class="line-block"><strong>Presentado a</strong></div>
+<div class="line-block">Procuraduría General de la Nación (PGN)</div>
+<div class="line-block"></div>
+<div class="line-block"><strong>Fecha</strong></div>
+<div class="line-block">15 Sep 2023</div>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="descripción-de-infraestructura-migración-sui-pgn">Descripción de Infraestructura Migración SUI PGN</h1>
+<h2 id="objetivo-del-documento-1">Objetivo del Documento</h2>
+<p>Descripción de los productos del trabajo de infraestructura del proyecto Migración SUI, Fase 2, de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición física de las ítems de hardware, redes y cómputo (procesamiento, comunicación y almacenamiento) del sistema SUI Migración. Por tanto, el documento contiene información estratégica para la toma de decisiones de plataforma y servicios de infraestructura, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.</p>
+<p><br></p>
+<h2 class="page_break_before" id="control-de-cambios-1">Control de Cambios</h2>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>OP 078-2023 Fase 2, PGN Migración Funcional SIU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Palabras clave</td>
+<td>SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td>1.c65edb5 del 15 Sep 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="N03a%a20Vsta%20aSegenta%20SOA%20PGN.md">N003a Vista Segmento PGN SIU</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="documento-de-arquitectura-infraestructura-sui-pgn">Documento de Arquitectura Infraestructura SUI PGN</h1>
+<ul>
+<li><a href="#descripción-de-infraestructura-migración-sui-pgn">Descripción de Infraestructura Migración SUI PGN</a>
+<ul>
+<li><a href="#lineabase.1a.siu-componentes.-infraestrcutura">Lineabase.1a.SIU componentes. infraestrcutura</a></li>
+<li><a href="#lineabase.0.siu-applicación.-física">Lineabase.0.SIU applicación. física</a></li>
+<li><a href="#seguridad.-lineabase.0.siu-applicación">Seguridad. Lineabase.0.SIU applicación</a></li>
+</ul></li>
+</ul>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="descripción-de-infraestructura-migración-sui-pgn-1">Descripción de Infraestructura Migración SUI PGN</h1>
+<h2 id="lineabase.1a.siu-componentes.-infraestrcutura-1">Lineabase.1a.SIU componentes. infraestrcutura</h2>
+<div id="fig:Lineabase.1a.SIUcomponentes.infraestrcutura" class="fignos">
+<figure>
+<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 13: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
+<figcaption aria-hidden="true"><span>Imagen 13:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
+</figure>
+</div>
+<p>Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración.</p>
+<ul>
+<li>Servidor de Canales (App PGN web y móvil)</li>
+<li>Servidor Web App (App SUI)</li>
+<li>Servidor Lappiz (Config SUI)</li>
+<li>Servidor BDD App (Transaccional)</li>
+<li>Servidor BDD Config (Configuración)</li>
+</ul>
+<h3 id="catálogo-de-elementos-12">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Persistencia</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> node Js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App PGN Móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App PGN Web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Config</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador admin</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador frontal mvl</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Controlador frontal web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Controlador funcional</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Modelo (neg)</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Puerto datos 1</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Puerto datos 2</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Seguridad</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Transacciones</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> sql<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Utilitario</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> no-sql<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> js<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> html<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de aplicación (runtime)</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>API externas</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Archivos Compartidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CDN Contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Doku (gest. doc.)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Identidades</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 3</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>ccccc Proveedores contenidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mensaje: JSON</strong></td>
+<td style="text-align: left;">data-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Infraestructura SUI</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>PGN SIU</strong></td>
+<td style="text-align: left;">grouping</td>
+<td style="text-align: left;">El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor BDD App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor BDD Config</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor Lappiz </strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor Web App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor Web Canales</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Nombre físico<br>IP LAN<br>IP Pública<br></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="lineabase.0.siu-applicación.-física">Lineabase.0.SIU applicación. física</h2>
+<div id="fig:Lineabase.0.SIUapplicación.física" class="fignos">
+<figure>
+<img src="images/Lineabase.0.SIUapplicación.física.png" alt="Imagen 14: Diagram: Lineabase.0.SIU applicación. física" />
+<figcaption aria-hidden="true"><span>Imagen 14:</span> Diagram: Lineabase.0.SIU applicación. física</figcaption>
+</figure>
+</div>
+<h2 id="representación-arquitectónica-1">Representación Arquitectónica</h2>
+<p>Con una arquitectura orientada a servicios SUI recopila:</p>
+<ol type="1">
+<li>Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11</li>
+<li>API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD</li>
+<li>API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración</li>
+</ol>
+<h3 id="catálogo-de-elementos-13">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Application Collaboration</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Collaboration</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> node Js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App PGN Móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App PGN Web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Config</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Punto acceso público</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;">URL tipo C<br>HTTP</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Communication Network (DMZ)</strong></td>
+<td style="text-align: left;">communication-network</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Communication Network (LAN)</strong></td>
+<td style="text-align: left;">communication-network</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Communication Network (internet)</strong></td>
+<td style="text-align: left;">communication-network</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Balanceador</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor BDD App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor BDD Config</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor Lappiz </strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor Web App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor Web Canales</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Nombre físico<br>IP LAN<br>IP Pública<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>www pgn com</strong></td>
+<td style="text-align: left;">technology-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="seguridad.-lineabase.0.siu-applicación">Seguridad. Lineabase.0.SIU applicación</h2>
+<div id="fig:Seguridad.Lineabase.0.SIUapplicación" class="fignos">
+<figure>
+<img src="images/Seguridad.Lineabase.0.SIUapplicación.png" alt="Imagen 15: Diagram: Seguridad. Lineabase.0.SIU applicación" />
+<figcaption aria-hidden="true"><span>Imagen 15:</span> Diagram: Seguridad. Lineabase.0.SIU applicación</figcaption>
+</figure>
+</div>
+<h2 id="representación-arquitectónica-2">Representación Arquitectónica</h2>
+<p>Con una arquitectura orientada a servicios SUI recopila:</p>
+<ol type="1">
+<li>Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11</li>
+<li>API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD</li>
+<li>API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración</li>
+</ol>
+<h3 id="catálogo-de-elementos-14">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Application Collaboration</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Collaboration</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> node Js<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>App PGN Móvil</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>App PGN Web</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Config</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> cs<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Punto acceso público</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;">URL tipo C<br>HTTP</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Communication Network (DMZ)</strong></td>
+<td style="text-align: left;">communication-network</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Communication Network (LAN)</strong></td>
+<td style="text-align: left;">communication-network</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Communication Network (internet)</strong></td>
+<td style="text-align: left;">communication-network</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Balanceador</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>FW BD.</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Network Firewall/WAF</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor BDD App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor BDD Config</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor Lappiz </strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Servidor Web App</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Servidor Web Canales</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Nombre físico<br>IP LAN<br>IP Pública<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sistema de Seguridad (LDAP) 1</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Sistema de Seguridad (LDAP) 1. Control de acceso internet<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sistema de Seguridad (LDAP) 2</strong></td>
+<td style="text-align: left;">node</td>
+<td style="text-align: left;">Sistema de Seguridad (LDAP) 2. Control de acceso a datos</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Analizador de acceso a la red. SIEM- EDR</strong></td>
+<td style="text-align: left;">resource</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>www pgn com</strong></td>
+<td style="text-align: left;">technology-interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Asignación de Tokens</strong></td>
+<td style="text-align: left;">value-stream</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>HTTPS, TLS, SSL</strong></td>
+<td style="text-align: left;">value-stream</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Requiere 2 MFA</strong></td>
+<td style="text-align: left;">value-stream</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Uso de claves criptograficas.</strong></td>
+<td style="text-align: left;">value-stream</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Uso de claves criptograficas. (copy)</strong></td>
+<td style="text-align: left;">value-stream</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><code>Generated on: Wed Sep 13 2023 17:07:58 GMT-0500 (COT)</code></p>
+<div style="page-break-before: always;">
+
+</div>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<div class="line-block"><strong>Versión</strong> del producto 1.c65edb5 de 15 Sep 2023</div>
+<div class="line-block"><strong>Presentado a</strong></div>
+<div class="line-block">Procuraduría General de la Nación (PGN)</div>
+<div class="line-block"></div>
+<div class="line-block"><strong>Fecha</strong></div>
+<div class="line-block">15 Sep 2023</div>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="documento-de-descripción-de-entidades-de-datos.-migración-sui-pgn">Documento de Descripción de Entidades de Datos. Migración SUI PGN</h1>
+<h2 id="objetivo-del-documento-2">Objetivo del Documento</h2>
+<p>Descripción de los productos de trabajo de la arquitectura de datos del proyecto Migración SUI, Fase 2, de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición lógica y física de las componentes de datos relevantes a la arquitectura del sistema SUI Migración. Por tanto, el documento contiene información estratégica para la toma de decisiones en cuanto al transporte, organización y mantenimiento de los entidades de datos de negocio, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.</p>
+<p><br></p>
+<h2 class="page_break_before" id="control-de-cambios-2">Control de Cambios</h2>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>OP 078-2023 Fase 2, PGN Migración Funcional SIU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Palabras clave</td>
+<td>SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td>1.c65edb5 del 15 Sep 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="N03a%a20Vsta%20aSegenta%20SOA%20PGN.md">N003a Vista Segmento PGN SIU</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="documento-de-arquitectura-datos-sui">Documento de Arquitectura Datos SUI</h1>
+<ul>
+<li><a href="#descripción-de-entidades-de-datos-migración-sui-pgn">Descripción de Entidades de Datos Migración SUI PGN</a>
+<ul>
+<li><a href="#migracion.2.-datos">Migracion.2. datos</a></li>
+<li><a href="#migracion.2a.-datos-hominis">Migracion.2a. datos Hominis</a></li>
+<li><a href="#migracion.2c.-datos-control-interno">Migracion.2c. datos Control interno</a></li>
+<li><a href="#migracion.2d.-datos-siri">Migracion.2d. datos SIRI</a></li>
+<li><a href="#migracion.2b.-datos-sim">Migracion.2b. datos SIM</a></li>
+</ul></li>
+</ul>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="descripción-de-entidades-de-datos-migración-sui-pgn">Descripción de Entidades de Datos Migración SUI PGN</h1>
+<h2 id="migracion.2.-datos">Migracion.2. datos</h2>
+<div id="fig:Migracion.2.datos" class="fignos">
+<figure>
+<img src="images/Migracion.2.datos.png" style="width:5.32in" alt="Imagen 16: Diagram: Migracion.2. datos" />
+<figcaption aria-hidden="true"><span>Imagen 16:</span> Diagram: Migracion.2. datos</figcaption>
+</figure>
+</div>
+<p>Modelo de acceso y procesamiento a datos de negocio del SUI. Presentamos la organización de los ítems de datos de negocio necesarios para que los módulos del SUI puedan recolectar, procesar, integrar y almacenarlos de forma organizada y escalable.</p>
+<p>Mediante esta organización, los datos de negocio son transportados desde sus respectivas fuentes mediante interfaces (por principio de extensión y mantenibilidad). Los datos externos, entendidos como los de otros proveedores, son obtenidos mediante un intermediario: el bus de datos del SUI.</p>
+<p>Consideramos tres tipos datos: datos transaccionales, históricos y externos, y presentamos una manera distinta de tratarlos y transportarlos.</p>
+<h3 id="catálogo-de-elementos-15">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>cc:PGN SUI (misional)</strong></td>
+<td style="text-align: left;">application-collaboration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>APP1.Relatoría</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;">Módulo del SUI. Relatoría pública. Publicación de información de referencia para funcionarios y personas naturales, cientes de la PGN.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>APP2.SIRI</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>APP3.Control interno</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>APP4.Hominis</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;">Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>APP5.SIM</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>APP6.Estratego</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de Acceso Proveedores</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;">Interfaz de acceso a los tipos de datos externos al SUI.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de Almacenaniento</strong></td>
+<td style="text-align: left;">application-interface</td>
+<td style="text-align: left;">Interfaz de acceso a los repositorio, base de datos relacionales y no jerárquicas. Tipos de datos transaccionales, internos, del SUI.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Procesamiento batch PGN</strong></td>
+<td style="text-align: left;">application-process</td>
+<td style="text-align: left;">Los procesos de lotes, que requieren volumenes de datos altos, deben hacer parte de la arquitectura de datos del SUI.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Bus de datos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;">El patrón de bus de datos tiene el rol de unir y referir a los datos externos al SUI de tal manera que hace transparente la localización y el formato de este tipo de datos.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Datos externos</strong></td>
+<td style="text-align: left;">data-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Datos históricos</strong></td>
+<td style="text-align: left;">data-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Datos transaccionales</strong></td>
+<td style="text-align: left;">data-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migracion.2a.-datos-hominis">Migracion.2a. datos Hominis</h2>
+<div id="fig:Migracion.2a.datosHominis" class="fignos">
+<figure>
+<img src="images/Migracion.2a.datosHominis.png" style="width:5.32in" alt="Imagen 17: Diagram: Migracion.2a. datos Hominis" />
+<figcaption aria-hidden="true"><span>Imagen 17:</span> Diagram: Migracion.2a. datos Hominis</figcaption>
+</figure>
+</div>
+<p>Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.</p>
+<p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
+<h3 id="catálogo-de-elementos-16">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>APP4.Hominis</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;">Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Cargo</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Código Actuación</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Código Jurisdicción</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Código Regional</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Código SNIES</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Código dependencia superior</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Código regional</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Decreto de la creación</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Diciplina Area</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Encargo del cargo</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Ley vigente</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Materia</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Nivel</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Nombre Actuación</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Nombre Jurisdicción</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Nombre Regional</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Nombre dependencia superior</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Tipo de inscripcion</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Vinculación</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migracion.2c.-datos-control-interno">Migracion.2c. datos Control interno</h2>
+<div id="fig:Migracion.2c.datosControlinterno" class="fignos">
+<figure>
+<img src="images/Migracion.2c.datosControlinterno.png" alt="Imagen 18: Diagram: Migracion.2c. datos Control interno" />
+<figcaption aria-hidden="true"><span>Imagen 18:</span> Diagram: Migracion.2c. datos Control interno</figcaption>
+</figure>
+</div>
+<p>Identificación de entidades de datos de negocio relacionadas al módulo de seguimiento del desempeño de la PGN del SUI, Control Interno.</p>
+<p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
+<h3 id="catálogo-de-elementos-17">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>APP3.Control interno</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Dependencia</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Funcionario</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Proceso</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Tipo de proceso</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migracion.2d.-datos-siri">Migracion.2d. datos SIRI</h2>
+<div id="fig:Migracion.2d.datosSIRI" class="fignos">
+<figure>
+<img src="images/Migracion.2d.datosSIRI.png" alt="Imagen 19: Diagram: Migracion.2d. datos SIRI" />
+<figcaption aria-hidden="true"><span>Imagen 19:</span> Diagram: Migracion.2d. datos SIRI</figcaption>
+</figure>
+</div>
+<p>Identificación de entidades de datos de negocio relacionadas al módulo del SUI, SIRI.</p>
+<p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
+<h3 id="catálogo-de-elementos-18">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>APP2.SIRI</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Entidad</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migracion.2b.-datos-sim">Migracion.2b. datos SIM</h2>
+<div id="fig:Migracion.2b.datosSIM" class="fignos">
+<figure>
+<img src="images/Migracion.2b.datosSIM.png" alt="Imagen 20: Diagram: Migracion.2b. datos SIM" />
+<figcaption aria-hidden="true"><span>Imagen 20:</span> Diagram: Migracion.2b. datos SIM</figcaption>
+</figure>
+</div>
+<p>Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.</p>
+<p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
+<h3 id="catálogo-de-elementos-19">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>APP5.SIM</strong></td>
+<td style="text-align: left;">application-component</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Corregimiento</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.Departamento</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>DAT.Municipio</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>DAT.País</strong></td>
+<td style="text-align: left;">business-object</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><code>Generated on: Wed Sep 13 2023 12:45:59 GMT-0500 (COT)</code></p>
+<div style="page-break-before: always;">
+
+</div>
+<h1 class="page_break_before" id="referencias">Referencias</h1>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+<p><span class="citation" data-cites="19ZPD5YjC">[<a href="#ref-19ZPD5YjC" role="doc-biblioref">1</a>]</span> <span class="citation" data-cites="hQTPO0iI">[<a href="#ref-hQTPO0iI" role="doc-biblioref">2</a>]</span> <span class="citation" data-cites="l0mriBft">[<a href="#ref-l0mriBft" role="doc-biblioref">3</a>]</span> <span class="citation" data-cites="eservices5-23">[<a href="#ref-eservices5-23" role="doc-biblioref"><strong>eservices5-23?</strong></a>]</span> <span class="citation" data-cites="eservices6-12">[<a href="#ref-eservices6-12" role="doc-biblioref"><strong>eservices6-12?</strong></a>]</span> <span class="citation" data-cites="eservices7-23">[<a href="#ref-eservices7-23" role="doc-biblioref"><strong>eservices7-23?</strong></a>]</span> <span class="citation" data-cites="bptrends07">[<a href="#ref-bptrends07" role="doc-biblioref"><strong>bptrends07?</strong></a>]</span></p>
+<div id="ref-19ZPD5YjC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Softgic. Proyecto de mejoramiento SIU de PGN. Fase i</strong> <div class="csl-block">Softgic, PGN</div> (2022-06) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
 </div>
-<div id="ref-mSMVRkoc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
+<div id="ref-hQTPO0iI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Procuraduría general de la nación. Anexo - especificaciones técnicas 19-05-2023</strong> <div class="csl-block">PGN</div> (2023-05) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
 </div>
-<div id="ref-QhC8yJ7V" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
-</div>
-<div id="ref-zBPP9YKu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
-</div>
-<div id="ref-1GGGHdsew" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
-</div>
-<div id="ref-PZMP42Ak" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
-</div>
-<div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+<div id="ref-l0mriBft" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>PGN manual técnico sharepoint, versión 1</strong> <div class="csl-block">Softgic, PGN</div> (2022-05) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
 </div>
 </div>
 <!-- default theme -->
