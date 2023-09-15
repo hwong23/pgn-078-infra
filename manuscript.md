@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-15" />
   <meta name="citation_publication_date" content="2023-09-15" />
   <meta property="article:published_time" content="2023-09-15" />
-  <meta name="dc.modified" content="2023-09-15T04:26:04+00:00" />
-  <meta property="article:modified_time" content="2023-09-15T04:26:04+00:00" />
+  <meta name="dc.modified" content="2023-09-15T04:27:10+00:00" />
+  <meta property="article:modified_time" content="2023-09-15T04:27:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/50b4bf68fed6872dff376f41123fd16741a1ee4c/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/50b4bf68fed6872dff376f41123fd16741a1ee4c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/50b4bf68fed6872dff376f41123fd16741a1ee4c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/f43cdd8a8ae30625118b908cfc269d40e6ab922a/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/f43cdd8a8ae30625118b908cfc269d40e6ab922a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/f43cdd8a8ae30625118b908cfc269d40e6ab922a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.50b4bf6 de 15 Sep 2023
+| **Versión** del producto 1.f43cdd8 de 15 Sep 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078-infra/v/50b4bf68fed6872dff376f41123fd16741a1ee4c/))
+([Web](https://hwong23.github.io/pgn-078-infra/v/f43cdd8a8ae30625118b908cfc269d40e6ab922a/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@50b4bf6](http://softgic.sharepoint.com)
+[Sharepoint Softgic@f43cdd8](http://softgic.sharepoint.com)
 del September 15, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.50b4bf6 del 15 Sep 2023 |
+| Versión        | 1.f43cdd8 del 15 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -305,7 +305,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.50b4bf6 del 15 Sep 2023 |
+| Versión        | 1.f43cdd8 del 15 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -317,7 +317,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 
 
 
-# Documento de Arquitectura Infraestructura SUI PGN
+# Doc.2.Infraestructura SUI
 * [Descripción de Infraestructura Migración SUI PGN](#descripción-de-infraestructura-migración-sui-pgn)
 	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
 	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
@@ -374,11 +374,11 @@ Dependencias de infraestructura entre los servicios que integran el modelo de ap
 |**Mensaje: JSON**|data-object|||
 |**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
 |**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
-|**Servidor BDD App**|node|||
-|**Servidor BDD Config**|node|||
-|**Servidor Lappiz **|node|||
-|**Servidor Web App**|node|||
-|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Lappiz **|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 120 GB,  D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
 
 ## Lineabase.0.SIU applicación. física
 ![Diagram: Lineabase.0.SIU applicación. física](images/Lineabase.0.SIUapplicación.física.png){#fig:Lineabase.0.SIUapplicación.física width=}
@@ -410,11 +410,11 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Communication Network (LAN)**|communication-network|||
 |**Communication Network (internet)**|communication-network|||
 |**Balanceador**|node|||
-|**Servidor BDD App**|node|||
-|**Servidor BDD Config**|node|||
-|**Servidor Lappiz **|node|||
-|**Servidor Web App**|node|||
-|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Lappiz **|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 120 GB,  D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
 |**www pgn com**|technology-interface|||
 
 ## Seguridad. Lineabase.0.SIU applicación
@@ -449,11 +449,11 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Balanceador**|node|||
 |**FW BD.**|node|||
 |**Network Firewall/WAF**|node|||
-|**Servidor BDD App**|node|||
-|**Servidor BDD Config**|node|||
-|**Servidor Lappiz **|node|||
-|**Servidor Web App**|node|||
-|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Lappiz **|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 120 GB,  D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
 |**Sistema de Seguridad (LDAP) 1**|node|Sistema de Seguridad (LDAP) 1. Control de acceso internet<br>||
 |**Sistema de Seguridad (LDAP) 2**|node|Sistema de Seguridad (LDAP) 2. Control de acceso a datos||
 |**Analizador de acceso a la red. SIEM- EDR**|resource|||
@@ -465,7 +465,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Uso de claves criptograficas. (copy)**|value-stream|||
 
 
-``Generated on: Wed Sep 13 2023 17:07:58 GMT-0500 (COT)``
+``Generated on: Thu Sep 14 2023 23:16:03 GMT-0500 (COT)``
 
 <div style="page-break-before: always;"></div>
 \newpage
