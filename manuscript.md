@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-09-15'
+date-meta: '2023-10-19'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-09-15" />
-  <meta name="citation_publication_date" content="2023-09-15" />
-  <meta property="article:published_time" content="2023-09-15" />
-  <meta name="dc.modified" content="2023-09-15T04:32:56+00:00" />
-  <meta property="article:modified_time" content="2023-09-15T04:32:56+00:00" />
+  <meta name="dc.date" content="2023-10-19" />
+  <meta name="citation_publication_date" content="2023-10-19" />
+  <meta property="article:published_time" content="2023-10-19" />
+  <meta name="dc.modified" content="2023-10-19T14:27:06+00:00" />
+  <meta property="article:modified_time" content="2023-10-19T14:27:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/809e99c0876a73937e2dc94aedb40e907ac6e140/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/809e99c0876a73937e2dc94aedb40e907ac6e140/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/809e99c0876a73937e2dc94aedb40e907ac6e140/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/50977db43a1586392e07ebc0785e7316238684dc/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/50977db43a1586392e07ebc0785e7316238684dc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/50977db43a1586392e07ebc0785e7316238684dc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.809e99c de 15 Sep 2023
+| **Versión** del producto 1.50977db de 19 Oct 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 15 Sep 2023
+| 19 Oct 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078-infra/v/809e99c0876a73937e2dc94aedb40e907ac6e140/))
+([Web](https://hwong23.github.io/pgn-078-infra/v/50977db43a1586392e07ebc0785e7316238684dc/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@809e99c](http://softgic.sharepoint.com)
-del September 15, 2023.
+[Sharepoint Softgic@50977db](http://softgic.sharepoint.com)
+del October 19, 2023.
 </em></small>
 
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.809e99c del 15 Sep 2023 |
+| Versión        | 1.50977db del 19 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -246,6 +246,154 @@ Table: Requisito no. 2. {#tbl:requisito2-id}
 
 
 
+# Arquitectura de Software: Infraestructura
+* [Descripción de Infraestructura Migración SUI PGN](#descripción-de-infraestructura-migración-sui-pgn)
+	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
+	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
+	* [Seguridad.2. Lineabase.0.SIU Applicación](#seguridad.2.-lineabase.0.siu-applicación)
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Descripción de Infraestructura Migración SUI PGN
+## Lineabase.1a.SIU componentes. infraestrcutura
+![Diagram: Lineabase.1a.SIU componentes. infraestrcutura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
+
+Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración. 
+
+* Servidor de Canales (App PGN web y móvil)
+* Servidor Web App (App SUI)
+* Servidor Lappiz (Config SUI)
+* Servidor BDD App (Transaccional)
+* Servidor BDD Config (Configuración)
+
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Persistencia**|application-collaboration|||
+|**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Web**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethical Hacking. <br>Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. |*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Controlador admin**|application-component||*plataforma:* cs<br>|
+|**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
+|**Controlador frontal web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>|*plataforma:* js<br>|
+|**Controlador funcional**|application-component||*plataforma:* js<br>|
+|**Modelo (neg)**|application-component||*plataforma:* cs<br>|
+|**Puerto datos 1**|application-component||*plataforma:* js<br>|
+|**Puerto datos 2**|application-component||*plataforma:* cs<br>|
+|**Seguridad**|application-component||*plataforma:* sql<br>*brecha:* 100<br>|
+|**Transacciones**|application-component||*plataforma:* sql<br>*brecha:* 100<br>|
+|**Utilitario**|application-component||*plataforma:* no-sql<br>|
+|**Vista móvil**|application-component||*plataforma:* js<br>|
+|**Vista web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>4.	SERVICIOS IDENTIFICADOS:<br>Servidor web:  Microsoft-IIS/10.0 <br>Marco de Programación: ASP.NET<br>Huellas digitales identificadas:  <br>Huella digital SHA-256 “FC:79:06:7E:F5:24:20:50:F1:C0:74:F7:85:56:B9:05:B7:33:A3:2D:44:A0:48”<br>Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:BE”<br>|*plataforma:* html<br>|
+|**Interfaz de aplicación (runtime)**|application-interface|Servidor web:  Microsoft-IIS/10.0 <br>Marco de Programación: ASP.NET<br>Huellas digitales identificadas:  <br>Huella digital SHA-256 “FC:79:06:7E:F5:24:20:50:F1:C0:74:F7:85:56:B9:05:B7:33:A3:2D:44:A0:48”<br>Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:BE”<br>|*plataforma:* angular 11<br>|
+|**API externas**|application-service|||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Archivos Compartidos**|application-service|||
+|**CDN Contenidos**|application-service||*brecha:* 100<br>|
+|**Doku (gest. doc.)**|application-service||*brecha:* 100<br>|
+|**Identidades**|application-service|||
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Interfaz de datos 3**|application-service|||
+|**ccccc Proveedores contenidos**|application-service||*brecha:* 100<br>|
+|**Mensaje: JSON**|data-object|||
+|**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
+|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+
+## Lineabase.0.SIU applicación. física
+![Diagram: Lineabase.0.SIU applicación. física](images/Lineabase.0.SIUapplicación.física.png){#fig:Lineabase.0.SIUapplicación.física width=}
+
+Procuraduría General de la Nación (PGN), módulo SIU migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SIU en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnologeia física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).
+
+## Representación Arquitectónica
+Con una arquitectura orientada a servicios SUI recopila:
+
+1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
+1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
+1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+
+<br>
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Application Collaboration**|application-collaboration|||
+|**Application Collaboration**|application-collaboration|||
+|**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Web**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethical Hacking. <br>Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. |*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Communication Network (DMZ)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Balanceador**|node|||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**www pgn com**|technology-interface|||
+
+## Seguridad.2. Lineabase.0.SIU Applicación
+![Diagram: Seguridad.2. Lineabase.0.SIU Applicación](images/Seguridad.2.Lineabase.0.SIUApplicación.png){#fig:Seguridad.2.Lineabase.0.SIUApplicación width=}
+
+## Representación Arquitectónica
+Con una arquitectura orientada a servicios SUI recopila:
+
+1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
+1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
+1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+
+
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Application Collaboration**|application-collaboration|||
+|**Application Collaboration**|application-collaboration|||
+|**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Web**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethical Hacking. <br>Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. |*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Autenticación**|business-object|Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán en cuenta las siguientes consideraciones:  <br>Validación del proceso de gestión de usuarios: La fortaleza de la autenticación dependerá del proceso de gestión de usuarios implementado por parte de la entidad. Se debe tener en cuenta los lineamientos definidos en la política Específica de Control de Acceso.  <br>Autenticación con integración de Windows: La autenticación permitirá que los usuarios asignados al dominio, una vez que se ingresen las credenciales, y realizada la validación, se autorizará el acceso a los servicios y/o soluciones a partir de la integración del directorio activo con la integración del LDAP – (Lightweight Directory Access Protocol).  <br>Los tipos de autenticación realizadas a partir de las identidades administradas de los recursos de Azure, entidades de Servicio y Certificados, podrán ser integrado con los dominios del directorio activo (DA) local. Por lo que respecta a la autenticación, será generado con la asignación de usuarios y credenciales definidas alineadas con la política Específica de Control de Acceso., a partir de la integración será validado el ingreso a las diferentes soluciones y/o sistemas de información de la PGN.  <br>Manejo y uso de contraseñas: Los servidores públicos deberán tener en cuenta los lineamientos definidos para la creación y gestión de contraseñas del Sistema de Gestión de Seguridad de la Información SGSI de la Procuraduría General de la Nación. <br>Utilización de canales cifrados: El proceso de autenticación tendrá mecanismos de transmisión seguro. El uso del TLS (Transport Layer Security), será necesario para el acceso a la página de autenticación que ayude a garantizar la autenticidad de la aplicación a los funcionarios, como en la transmisión de las credenciales.  <br>Bloqueo de cuentas: Aquellas cuentas sobre las que se han realizados múltiples intentos de conexiones fallidas, cinco (5) intentos erróneos, se tendrá implementado un bloqueo temporal o permanente como mecanismo de seguridad para evitar amenazas de ataques.  ||
+|**Autorización**|business-object|Metodología <br>Los mecanismos de autorización para el acceso a los sistemas de información de la procuraduría general de la nación describen la forma de cómo se restringe el acceso a los diferentes módulos (Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros.), y que se considera un mecanismo de protección, que ayuda a reaccionar ante cualquier operación no autorizada. El control de acceso basado en roles (RBAC), enfoca la idea de que a los funcionarios se les otorgue los permisos de acceso a los recursos, basados en los roles y/o perfiles que este posee. Este control posee dos características fundamentales: i) los accesos son controlados por medio de los roles y/o perfiles asignados, quiere decir, a los servidores públicos, contratistas, terceros y otros colaboradores autorizados para interactuar con los sistemas de información se le asignan los roles y el encargado/responsable definirá los permisos, que a su vez están relacionados con los roles, ii) Los roles pueden ser definidos a nivel jerárquico, es decir que un rol podrá ser miembro de otro rol.  <br>Un proceso de autorización basado en roles, identifica tres factores importantes, i) Todos los servidores públicos, contratistas, terceros y otros <br>Colaboradores, deben tener un rol asignado, si no es asignado no podrá realizar ninguna acción relacionada con el acceso, ii) un usuario podrá hacer uso de los permisos asociados a los roles asignados, el cual deberá realizar el inicio de sesión el usuario asignado del Directorio activo (DA), iii) los servidores públicos, contratistas, terceros y otros, solo podrán realizar acciones para las cuales han sido autorizados por medio de la activación de sus roles y/o perfiles.  <br>EL control definido para los accesos basados en roles RBAC, permitirá que solo las personas autorizadas de la PGN podrán acceder a ciertos recursos (programas, equipos, aplicaciones, bases de datos, etc.) definido por sus funciones laborales, lo que permitirá controlar los accesos desde diferentes escenarios: Sistemas de información, redes y aplicaciones. <br>Gestión de identidades y Control de acceso:  <br>Gestor de identidades: En esta gestión se planifica el ciclo de vida de las identidades de usuario y se realizan los procesos de sincronización, de acuerdo a los suministros de accesos establecidos por la entidad, los cuales son integrados con el servidor que gestiona la identidad y control de acceso.  <br>Gestor de roles: La asignación de roles es sincronizada con la identidad de usuario en el servidor de dominio. Para esta gestión se crean las reglas y condiciones que determinan si un usuario puede o no pertenecer a un rol definido por la entidad. <br>Para el gobierno y gestión de identidades y de acceso, se identificó como primera medida la implementación de la siguiente metodología. <br>REGLAS PARA LA CREACIÓN DE USUARIOS. <br>Identificación de Mecanismos: <br> <br>En este ítem se deben identificar las herramientas con las que cuenta la    entidad, las cuales deberán ser registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_1 (Mecanismos)”. <br>Identificación de Roles y Privilegios <br>Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”. <br>Aprovisionamiento de cuentas <br>Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”. <br>Establecimiento de mecanismos de control de acceso:  <br>Este ítem controla que usuarios tienen permitido el acceso a los diferentes aplicativos o herramientas dentro de la organización permitiendo segregar las funciones dependiendo del rol del usuario en cada sistema, Este establecimiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_3 (Acceso)”. <br>Definición de Privilegios y accesos.  <br>Los accesos y privilegios serán identificados en la matriz, encargado identificar cada uno de los roles y perfiles que se tendrá cada usuario hacia los sistemas de información cumpliendo con el principio del menor privilegio, teniendo en cuenta que los usuarios deberán tener exclusivamente los permisos y privilegios que necesita para el desarrollo de sus actividades. La matriz identificará i) los roles que se deben crear para cada sistema de información, ii) los privilegios que requiere cada rol del sistema y iii) los niveles de accesos requeridos, (Consultar, Modificar, Eliminar) (CRUD) y iv) Tipos de usuarios, roles que pueden ser asignados al perfil, entre otros.  <br>Configuración de permisos <br>La configuración con de los perfiles con sus accesos y privilegios en los sistemas de información se debe realizar empleando las herramientas propias de la procuraduría general de la nacional PGN, y serán asignados los permisos según la matriz de roles y permisos.  <br>Identificación de Mecanismos: <br>En este ítem se deben identificar las herramientas con las que cuenta la    entidad, las cuales deberán ser registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_1 (Mecanismos)”. <br>Identificación de Roles y Privilegios <br>Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”. <br>Aprovisionamiento de cuentas <br>Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”. <br>Establecimiento de mecanismos de control de acceso:  <br>Este ítem controla que usuarios tienen permitido el acceso a los diferentes aplicativos o herramientas dentro de la organización permitiendo segregar las funciones dependiendo del rol del usuario en cada sistema, Este establecimiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_3 (Acceso)”. <br>Definición de Privilegios y accesos.  <br>Los accesos y privilegios serán identificados en la matriz, encargado identificar cada uno de los roles y perfiles que se tendrá cada usuario hacia los sistemas de información cumpliendo con el principio del menor privilegio, teniendo en cuenta que los usuarios deberán tener exclusivamente los permisos y privilegios que necesita para el desarrollo de sus actividades. La matriz identificará i) los roles que se deben crear para cada sistema de información, ii) los privilegios que requiere cada rol del sistema y iii) los niveles de accesos requeridos, (Consultar, Modificar, Eliminar) (CRUD) y iv) Tipos de usuarios, roles que pueden ser asignados al perfil, entre otros.  <br>Configuración de permisos <br>La configuración con de los perfiles con sus accesos y privilegios en los sistemas de información se debe realizar empleando las herramientas propias de la procuraduría general de la nacional PGN, y serán asignados los permisos según la matriz de roles y permisos.  ||
+|**Cifrado de Datos en tránsito**|business-object|Proteger la información propia de la PGN utilizando mecanismos de cifrado que permita garantizar los pilares de Segurida de la Información Confidencialidad e integridad, asimismo reducir los riesgos de la información mediante la ayuda de Técnicas Criptograficas. <br>Como mecanismos se propone implementar estos  mecanismos de cifrado, como el protocolo TLS ( Transport Layer Security) que permite a dos partes identificarse y autenticarse entre sí y comunicarse con confidencialidad e integridad de datos a partir de la conexión del usuario y un servidor WEB.<br>Se propone integrar certificados SSL, que permite cifrar la información confidencial a fin de que solo los autorizados puedan tener acceso a ella, y asi evitar manipulacion de información confidencial. La Seguridad  que brinda SSL, da garantía para acceder a los aplicativos de PNG. <br>Como implementar certificados SSL?<br>Podran ser adquiridos a través del proveedor de dominios.<br>TLS el protocolo que surge para reforzar la seguridad de los certificados SSL, que funciona como mecanismo de encriptación para que sea realmente transparente el envio de la información, proporcionando una autenticación solida, restringiendo la manipulación, interceptación y alteración de mensajes.<br>La ultima versión del TLS es la 1.3<br>||
+|**Cifrado de datos en tránsito**|business-object|Proteger la información propia de la PGN utilizando mecanismos de cifrado que permita garantizar los pilares de Segurida de la Información Confidencialidad e integridad, asimismo reducir los riesgos de la información mediante la ayuda de Técnicas Criptograficas. Como mecanismos se propone implementar estos  mecanismos de cifrado, como el protocolo TLS ( Transport Layer Security) que permite a dos partes identificarse y autenticarse entre sí y comunicarse con confidencialidad e integridad de datos a partir de la conexión del usuario y un servidor WEB.<br>Se propone integrar certificados SSL, que permite cifrar la información confidencial a fin de que solo los autorizados puedan tener acceso a ella, y asi evitar manipulacion de información confidencial. La Seguridad  que brinda SSL, da garantía para acceder a los aplicativos de PNG. <br>Como implementar certificados SSL?<br>Podran ser adquiridos a través del proveedor de dominios.<br>TLS el protocolo que surge para reforzar la seguridad de los certificados SSL, que funciona como mecanismo de encriptación para que sea realmente transparente el envio de la información, proporcionando una autenticación solida, restringiendo la manipulación, interceptación y alteración de mensajes.<br>La ultima versión del TLS es la 1.3||
+|**Communication Network (DMZ)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Balanceador**|node|||
+|**Firewall BDD**|node||*brecha:* 100<br>|
+|**Network Firewall/WAF**|node||*brecha:* 100<br>|
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Sistema de Seguridad (LDAP) 1**|node|Sistema de Seguridad (LDAP) 1. Control de acceso internet, <br>La autenticación podrá estar integrada con el directorio activo, a partir de la generación de codigo para ek ingreso con 2FA, que podrá generar un código la plataforma de correo corporativo, el cual solicitará el codigo de autenticacion y una vez ingreado podrá redirigir al sitio.<br>|*brecha:* 100<br>|
+|**Sistema de Seguridad (LDAP) 2**|node|Sistema de Seguridad (LDAP) 2. Control de acceso internet, <br>La solución se podra integrar con el directorio activo, a partir de la generación del 2FA, que podrá generar un  codigo por desde la plataforma de office 365, el cual solicitará el codigo de autenticacion y una vez ingreado podrá acceder al sitio. <br>|*brecha:* 100<br>|
+|**www pgn com**|technology-interface|||
+
+
+``Generated on: Thu Oct 19 2023 09:18:43 GMT-0500 (COT)``
+
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
 2.	Administrar los Perfiles de acceso por rol: Esta funcionalidad permitirá configurar a que funcionalidades u opciones de la solución puede entrar un usuario con un rol específico. 
@@ -291,181 +439,6 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 
 <br>
 
-
-# Descripción de Infraestructura Migración SUI PGN
-
-## Objetivo del Documento
-Descripción de los productos del trabajo de infraestructura del proyecto Migración SUI, Fase 2, de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición física de las ítems de hardware, redes y cómputo (procesamiento, comunicación y almacenamiento) del sistema SUI Migración. Por tanto, el documento contiene información estratégica para la toma de decisiones de plataforma y servicios de infraestructura, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.
-
-<br>
-
-##  Control de Cambios {.page_break_before}
-| Tema           | OP 078-2023 Fase 2, PGN Migración Funcional SIU      |
-|----------------|----------------------------|
-| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
-| Autor          |                            |
-| Fuente         |                            |
-| Versión        | 1.809e99c del 15 Sep 2023 |
-| Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
-
-<br>
-
-<br>
-
-<div style="page-break-before: always;"></div>
-\newpage
-
-
-
-# Doc.2.Infraestructura SUI
-* [Descripción de Infraestructura Migración SUI PGN](#descripción-de-infraestructura-migración-sui-pgn)
-	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
-	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
-	* [Seguridad. Lineabase.0.SIU applicación](#seguridad.-lineabase.0.siu-applicación)
-
-<div style="page-break-before: always;"></div>
-\newpage
-
-# Descripción de Infraestructura Migración SUI PGN
-## Lineabase.1a.SIU componentes. infraestrcutura
-![Diagram: Lineabase.1a.SIU componentes. infraestrcutura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
-
-Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración. 
-
-* Servidor de Canales (App PGN web y móvil)
-* Servidor Web App (App SUI)
-* Servidor Lappiz (Config SUI)
-* Servidor BDD App (Transaccional)
-* Servidor BDD Config (Configuración)
-
-
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**Persistencia**|application-collaboration|||
-|**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
-|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
-|**Config**|application-component||*plataforma:* cs<br>|
-|**Controlador admin**|application-component||*plataforma:* cs<br>|
-|**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
-|**Controlador frontal web**|application-component||*plataforma:* js<br>|
-|**Controlador funcional**|application-component||*plataforma:* js<br>|
-|**Modelo (neg)**|application-component||*plataforma:* cs<br>|
-|**Puerto datos 1**|application-component||*plataforma:* js<br>|
-|**Puerto datos 2**|application-component||*plataforma:* cs<br>|
-|**Seguridad**|application-component||*plataforma:* sql<br>|
-|**Transacciones**|application-component||*plataforma:* sql<br>|
-|**Utilitario**|application-component||*plataforma:* no-sql<br>|
-|**Vista móvil**|application-component||*plataforma:* js<br>|
-|**Vista web**|application-component||*plataforma:* html<br>|
-|**Interfaz de aplicación (runtime)**|application-interface||*plataforma:* angular 11<br>|
-|**API externas**|application-service|||
-|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
-|**Archivos Compartidos**|application-service|||
-|**CDN Contenidos**|application-service|||
-|**Doku (gest. doc.)**|application-service|||
-|**Identidades**|application-service|||
-|**Interfaz de datos 1**|application-service|||
-|**Interfaz de datos 2**|application-service|||
-|**Interfaz de datos 3**|application-service|||
-|**ccccc Proveedores contenidos**|application-service|||
-|**Mensaje: JSON**|data-object|||
-|**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
-|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
-|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
-|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
-|**Servidor Lappiz **|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 120 GB,  D: 16 GB.<br>||
-|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
-|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
-
-## Lineabase.0.SIU applicación. física
-![Diagram: Lineabase.0.SIU applicación. física](images/Lineabase.0.SIUapplicación.física.png){#fig:Lineabase.0.SIUapplicación.física width=}
-
-## Representación Arquitectónica
-Con una arquitectura orientada a servicios SUI recopila:
-
-1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
-1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
-1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
-
-
-
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**Application Collaboration**|application-collaboration|||
-|**Application Collaboration**|application-collaboration|||
-|**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
-|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
-|**Config**|application-component||*plataforma:* cs<br>|
-|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
-|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
-|**Interfaz de datos 1**|application-service|||
-|**Interfaz de datos 2**|application-service|||
-|**Communication Network (DMZ)**|communication-network|||
-|**Communication Network (LAN)**|communication-network|||
-|**Communication Network (internet)**|communication-network|||
-|**Balanceador**|node|||
-|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
-|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
-|**Servidor Lappiz **|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 120 GB,  D: 16 GB.<br>||
-|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
-|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
-|**www pgn com**|technology-interface|||
-
-## Seguridad. Lineabase.0.SIU applicación
-![Diagram: Seguridad. Lineabase.0.SIU applicación](images/Seguridad.Lineabase.0.SIUapplicación.png){#fig:Seguridad.Lineabase.0.SIUapplicación width=}
-
-## Representación Arquitectónica
-Con una arquitectura orientada a servicios SUI recopila:
-
-1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
-1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
-1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
-
-
-
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**Application Collaboration**|application-collaboration|||
-|**Application Collaboration**|application-collaboration|||
-|**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
-|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
-|**Config**|application-component||*plataforma:* cs<br>|
-|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
-|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
-|**Interfaz de datos 1**|application-service|||
-|**Interfaz de datos 2**|application-service|||
-|**Communication Network (DMZ)**|communication-network|||
-|**Communication Network (LAN)**|communication-network|||
-|**Communication Network (internet)**|communication-network|||
-|**Balanceador**|node|||
-|**FW BD.**|node|||
-|**Network Firewall/WAF**|node|||
-|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
-|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
-|**Servidor Lappiz **|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 120 GB,  D: 16 GB.<br>||
-|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
-|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
-|**Sistema de Seguridad (LDAP) 1**|node|Sistema de Seguridad (LDAP) 1. Control de acceso internet<br>||
-|**Sistema de Seguridad (LDAP) 2**|node|Sistema de Seguridad (LDAP) 2. Control de acceso a datos||
-|**Analizador de acceso a la red. SIEM- EDR**|resource|||
-|**www pgn com**|technology-interface|||
-|**Asignación de Tokens**|value-stream|||
-|**HTTPS, TLS, SSL**|value-stream|||
-|**Requiere 2 MFA**|value-stream|||
-|**Uso de claves criptograficas.**|value-stream|||
-|**Uso de claves criptograficas. (copy)**|value-stream|||
-
-
-``Generated on: Thu Sep 14 2023 23:16:03 GMT-0500 (COT)``
 
 <div style="page-break-before: always;"></div>
 \newpage
