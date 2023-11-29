@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-11-28'
+date-meta: '2023-11-29'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-11-28" />
-  <meta name="citation_publication_date" content="2023-11-28" />
-  <meta property="article:published_time" content="2023-11-28" />
-  <meta name="dc.modified" content="2023-11-28T14:39:59+00:00" />
-  <meta property="article:modified_time" content="2023-11-28T14:39:59+00:00" />
+  <meta name="dc.date" content="2023-11-29" />
+  <meta name="citation_publication_date" content="2023-11-29" />
+  <meta property="article:published_time" content="2023-11-29" />
+  <meta name="dc.modified" content="2023-11-29T19:08:48+00:00" />
+  <meta property="article:modified_time" content="2023-11-29T19:08:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/47520257395021d059312518fe900830b8d1bc35/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/47520257395021d059312518fe900830b8d1bc35/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/47520257395021d059312518fe900830b8d1bc35/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/df64379fc225eb656218b4d836effa20b5adc6f7/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/df64379fc225eb656218b4d836effa20b5adc6f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/df64379fc225eb656218b4d836effa20b5adc6f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -53,8 +53,8 @@ manubot-clear-requests-cache: false
 ...
 
 ---
-title: Documento de Arquitectura Migración Funcional PGN SIU
-subtitle: OP 078-2023 - Fase 2, PGN Migración Funcional SIU
+title: Documento de Arquitectura Migración Funcional PGN SUI
+subtitle: OP 078-2023 - Fase 2, PGN Migración Funcional SUI
 geometry:
   - top=1in
   - bottom=1in
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.4752025 de 28 Nov 2023
+| **Versión** del producto 1.df64379 de 29 Nov 2023
 
 | **Presentado a**
 
@@ -87,18 +87,18 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 28 Nov 2023
+| 29 Nov 2023
 
 
 <div style="page-break-before: always;"></div>
 \newpage
 
 
-<small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078-infra/v/47520257395021d059312518fe900830b8d1bc35/))
-están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@4752025](http://softgic.sharepoint.com)
-del November 28, 2023.
+<small><em>Los productos de esta etapa, Migración Funcional SUI, Contrato 078-2023, 
+([Web](https://hwong23.github.io/pgn-078-infra/v/df64379fc225eb656218b4d836effa20b5adc6f7/))
+están basados en el resultado de la Fase 1 del proyecto PGN SUI del 2022,
+[Sharepoint Softgic@df64379](http://softgic.sharepoint.com)
+del November 29, 2023.
 </em></small>
 
 
@@ -132,18 +132,19 @@ del November 28, 2023.
 
 
 ## Objetivo del Documento
-Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto Migración Funcional SIU de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición lógica y física de las partes del sistema. Por tanto, el documento contiene información estratégica, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.
+Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto Migración Funcional SUI de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición lógica y física de las partes del sistema. Por tanto, el documento contiene información estratégica, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.
 
 
 <br>
 
 ##  Control de Cambios {.page_break_before}
-| Tema           | OP 078-2023 Fase 2, PGN Migración Funcional SIU      |
+| Tema           | OP 078-2023 Fase 2, PGN Migración Funcional SUI      |
 |----------------|----------------------------|
-| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
+| Palabras clave | SUI, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.df64379 | 2023-11-29. doc SUI* |
 | 1.4752025 | 2023-11-28. doc--nov |
 | 1.041d9bd | 2023-11-28. doc--nov |
 | 1.348c7a8 | 2023-11-28. doc--nov |
@@ -152,9 +153,8 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.62bdc35 | 2023-10-22. histr4 |
 | 1.5a1a74c | 2023-10-22. histr3 |
 | 1.13c5f29 | 2023-10-22. histr2 |
-| 1.7e6a6e7 | 2023-10-22. histr1 |
-| 1.50977db | 2023-10-19. upd |˝
-| Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
+| 1.7e6a6e7 | 2023-10-22. histr1 |˝
+| Vínculos       | [N003a Vista Segmento PGN SUI](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
 
@@ -201,7 +201,7 @@ Lista de restricciones de la migración SUI, 2023.
 
 1. Restricciones de hardware o software en servidores. Los equipos de infraestructura del proyecto actual a tener en cuenta en los diseños de la solución de esta Fase 2 serán los mismos de la anterior Fase 1. Esto es, los que están descritos en el anexo técnico del contrato del proyecto.
 1. Disponibilidad de recursos. Los recursos de implementación y validación de calidad de esta Fase del proyecto son los mismos a tener en cuenta en los diseños de la solución de esta Fase 2. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.
-1. Estándares. Los estándares seleccionados por la solución de este proyecto, (Fase 2, PGN Migración Funcional SIU, están determinados por el uso de las plataformas específicas determinadas por la implementación (desarrollo del software).
+1. Estándares. Los estándares seleccionados por la solución de este proyecto, (Fase 2, PGN Migración Funcional SUI, están determinados por el uso de las plataformas específicas determinadas por la implementación (desarrollo del software).
 1. Requerimientos de interoperabilidad. Los recursos de interoperabilidad y colaboración entre sistemas, módulos, submódulos y aplicaciones de terceros relacionados con esta Fase del proyecto son los mismos a tener en cuenta en los diseños de la solución de esta Fase 2. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.
 1. Requerimientos de protocolos o interfaces. Los recursos de red, y protocolos de comunicación o transporte de esta Fase del proyecto a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de los considerados en la anterior Fase 1. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.
 1. Seguridad. Las restricciones de seguridad del proyecto actual a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de las de la anterior Fase 1. Esto es, los que están descritos en el anexo técnico del contrato del proyecto.
@@ -259,12 +259,12 @@ Table: Requisito no. 2. {#tbl:requisito2-id}
 # Arquitectura de Software: Infraestructura
 * [Diagrama de Infraestructura de TI](#diagrama-de-infraestructura-de-ti)
 	* [Migracion.3. Infraestructura](#migracion.3.-infraestructura)
-	* [Lineabase.1a.SIU Componentes. Infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
-	* [Lineabase.0.SIU Aplicación. Física](#lineabase.0.siu-aplicación.-física)
-	* [Seguridad.2. Lineabase.0.SIU Aplicación](#seguridad.2.-lineabase.0.siu-aplicación)
+	* [Lineabase.1a.SUI Componentes. Infraestrcutura](#lineabase.1a.SUI-componentes.-infraestrcutura)
+	* [Lineabase.0.SUI Aplicación. Física](#lineabase.0.SUI-aplicación.-física)
+	* [Seguridad.2. Lineabase.0.SUI Aplicación](#seguridad.2.-lineabase.0.SUI-aplicación)
 	* [Migracion.6. Migración de datos](#migracion.6.-migración-de-datos)
 * [Documento sobre especificaciones técnicas de infraestructura TI](#documento-sobre-especificaciones-técnicas-de-infraestructura-ti)
-	* [Lineabase.0.SIU Aplicación. Física](#lineabase.0.siu-aplicación.-física)
+	* [Lineabase.0.SUI Aplicación. Física](#lineabase.0.SUI-aplicación.-física)
 
 
 <div style="page-break-before: always;"></div>
@@ -394,8 +394,8 @@ Identificación de los ítems de infraestructura tecnológica, nodos, redes, có
 
 <br>
 
-## Lineabase.1a.SIU Componentes. Infraestrcutura
-![Vista. Lineabase.1a.SIU Componentes. Infraestrcutura](images/Lineabase.1a.SIUComponentes.Infraestrcutura.png){#fig:Lineabase.1a.SIUComponentes.Infraestrcutura width=}
+## Lineabase.1a.SUI Componentes. Infraestrcutura
+![Vista. Lineabase.1a.SUI Componentes. Infraestrcutura](images/Lineabase.1a.SIUComponentes.Infraestrcutura.png){#fig:Lineabase.1a.SIUComponentes.Infraestrcutura width=}
 
 Relación de dependencias de infraestructura con los servicios que integran el modelo de aplicación de SUI Migrado, 2023.
 
@@ -443,7 +443,7 @@ Relación de dependencias de infraestructura con los servicios que integran el m
 |**Proveedores contenidos**|application-service||*brecha:* 100<br>|
 |**Mensaje: JSON**|data-object|||
 |**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
-|**PGN SIU**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
+|**PGN SUI**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
 |**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
 |**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
 |**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br>||
@@ -452,10 +452,10 @@ Relación de dependencias de infraestructura con los servicios que integran el m
 
 <br>
 
-## Lineabase.0.SIU Aplicación. Física
-![Vista. Lineabase.0.SIU Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
+## Lineabase.0.SUI Aplicación. Física
+![Vista. Lineabase.0.SUI Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
 
-Procuraduría General de la Nación (PGN), módulo SIU migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SIU en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnología física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).
+Procuraduría General de la Nación (PGN), módulo SUI migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SUI en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnología física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).
 
 ## Representación Arquitectónica
 Con una arquitectura orientada a servicios SUI recopila:
@@ -492,10 +492,10 @@ Con una arquitectura orientada a servicios SUI recopila:
 
 <br>
 
-## Seguridad.2. Lineabase.0.SIU Aplicación
-![Vista. Seguridad.2. Lineabase.0.SIU Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
+## Seguridad.2. Lineabase.0.SUI Aplicación
+![Vista. Seguridad.2. Lineabase.0.SUI Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
 
-## Metodología Seguridad SIU Migrado
+## Metodología Seguridad SUI Migrado
 Los mecanismos de autorización para el acceso a los sistemas de información de la Procuraduría General de la Nación describen la forma de cómo se restringe el acceso a los diferentes módulos Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros, y que se considera un mecanismo de protección que ayuda a reaccionar ante cualquier operación no autorizada. 
 
 El control de acceso basado en roles (RBAC), enfoca la idea de que a los funcionarios se les otorgue los permisos de acceso a los recursos, basados en los roles y/o perfiles que este posee. Este control posee dos características fundamentales: i) los accesos son controlados por medio de los roles y/o perfiles asignados, quiere decir, a los servidores públicos, contratistas, terceros y otros colaboradores autorizados para interactuar con los sistemas de información se le asignan los roles y el encargado/responsable definirá los permisos, que a su vez están relacionados con los roles, ii) Los roles pueden ser definidos a nivel jerárquico, es decir que un rol podrá ser miembro de otro rol.  
@@ -671,10 +671,10 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 \newpage
 
 # Documento sobre especificaciones técnicas de infraestructura TI
-## Lineabase.0.SIU Aplicación. Física
-![Vista. Lineabase.0.SIU Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
+## Lineabase.0.SUI Aplicación. Física
+![Vista. Lineabase.0.SUI Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
 
-Procuraduría General de la Nación (PGN), módulo SIU migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SIU en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnología física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).
+Procuraduría General de la Nación (PGN), módulo SUI migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SUI en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnología física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).
 
 ## Representación Arquitectónica
 Con una arquitectura orientada a servicios SUI recopila:
