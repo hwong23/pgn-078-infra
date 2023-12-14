@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-12-05'
+date-meta: '2023-12-14'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-12-05" />
-  <meta name="citation_publication_date" content="2023-12-05" />
-  <meta property="article:published_time" content="2023-12-05" />
-  <meta name="dc.modified" content="2023-12-05T18:26:58+00:00" />
-  <meta property="article:modified_time" content="2023-12-05T18:26:58+00:00" />
+  <meta name="dc.date" content="2023-12-14" />
+  <meta name="citation_publication_date" content="2023-12-14" />
+  <meta property="article:published_time" content="2023-12-14" />
+  <meta name="dc.modified" content="2023-12-14T20:54:28+00:00" />
+  <meta property="article:modified_time" content="2023-12-14T20:54:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/4855b5515eaff8f35074a256f119899a42f57e55/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/4855b5515eaff8f35074a256f119899a42f57e55/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/4855b5515eaff8f35074a256f119899a42f57e55/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.4855b55 de 05 Dec 2023
+| **Versión** del producto 1.0aab6dc de 14 Dec 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 05 Dec 2023
+| 14 Dec 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SUI, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078-infra/v/4855b5515eaff8f35074a256f119899a42f57e55/))
+([Web](https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/))
 están basados en el resultado de la Fase 1 del proyecto PGN SUI del 2022,
-[Sharepoint Softgic@4855b55](http://softgic.sharepoint.com)
-del December 5, 2023.
+[Sharepoint Softgic@0aab6dc](http://softgic.sharepoint.com)
+del December 14, 2023.
 </em></small>
 
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.0aab6dc | 2023-12-14. doc--dic |
 | 1.4855b55 | 2023-12-05. pptx--pgn |
 | 1.0de2b5f | 2023-11-29. doc SUI* |
 | 1.df64379 | 2023-11-29. doc SUI* |
@@ -152,8 +153,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.348c7a8 | 2023-11-28. doc--nov |
 | 1.ae18279 | 2023-11-23. arqdoc1 |
 | 1.e455e6a | 2023-11-23. arqdoc1 |
-| 1.62bdc35 | 2023-10-22. histr4 |
-| 1.5a1a74c | 2023-10-22. histr3 |˝
+| 1.62bdc35 | 2023-10-22. histr4 |˝
 | Vínculos       | [N003a Vista Segmento PGN SUI](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1662,6 +1662,7 @@ Partes del repositorio de arquitectura
 	* [Lineabase.0.SUI Aplicación. Física](#lineabase.0.sui-aplicación.-física)
 	* [Seguridad.2. Lineabase.0.SUI Aplicación](#seguridad.2.-lineabase.0.sui-aplicación)
 	* [Migracion.6. Migración de datos](#migracion.6.-migración-de-datos)
+	* [Migracion.3.a Infraestructura. Transición](#migracion.3.a-infraestructura.-transición)
 * [Documento sobre especificaciones técnicas de infraestructura TI](#documento-sobre-especificaciones-técnicas-de-infraestructura-ti)
 	* [Lineabase.0.SUI Aplicación. Física](#lineabase.0.sui-aplicación.-física)
 
@@ -1874,13 +1875,15 @@ Relación de dependencias de infraestructura con los servicios que integran el m
 |**Archivos Compartidos**|application-service|||
 |**CDN Contenidos**|application-service||*brecha:* 100<br>|
 |**Doku (gest. doc.)**|application-service||*brecha:* 100<br>|
-|**Identidades**|application-service|||
+|**IGA: Identidades**|application-service|||
 |**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
 |**Interfaz de datos 2**|application-service|||
 |**Interfaz de datos 3**|application-service|||
 |**Proveedores contenidos**|application-service||*brecha:* 100<br>|
 |**Mensaje: JSON**|data-object|||
-|**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
+|**Infraestructura SUI, Fase 1. PaaS, SaaS**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
 |**PGN SUI**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
 |**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
 |**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
@@ -2143,6 +2146,187 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 
 <br>
 
+## Migracion.3.a Infraestructura. Transición
+![Vista. Migracion.3.a Infraestructura. Transición](images/Migracion.3.aInfraestructura.Transición.png){#fig:Migracion.3.aInfraestructura.Transición width=}
+
+Escalabilidad física (escalabilidad horizontal) realizada mediante el incremente de procesamiento (servidores) para ejecutar los casos de uso, que a su vez están implementados por componentes ejecutables, como servicio, u objetos C#.
+
+En lo posible, los equipos de hardware, o máquinas virtuales nuevas no interfieren con la base actual.
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**Application Collaboration**|application-collaboration|||
+|**Application Collaboration**|application-collaboration|||
+|**Persistencia**|application-collaboration|||
+|**APP1.Relatoría**|application-component|Módulo del SUI. Relatoría pública. Publicación de información de referencia para funcionarios y personas naturales, cientes de la PGN.<br> ||
+|**APP1.Relatoría**|application-component|Módulo del SUI. Relatoría pública. Publicación de información de referencia para funcionarios y personas naturales, cientes de la PGN.<br> ||
+|**APP2.SIRI**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: SIRI.<br>||
+|**APP2.SIRI**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: SIRI.<br>||
+|**APP3.Control interno**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: Control Interno.<br>||
+|**APP3.Control interno**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: Control Interno.<br>||
+|**APP4.Hominis**|application-component|Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br>||
+|**APP4.Hominis**|application-component|Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br>||
+|**APP5.SIM**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: SIM.<br>||
+|**APP5.SIM**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: SIM.<br>||
+|**APP6.Estratego**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: Estratego.<br>||
+|**APP6.Estratego**|application-component|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN: Estratego.<br>||
+|**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
+|**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
+|**App Movíl**|application-component|||
+|**App PGN Móvil**|application-component|||
+|**App PGN Móvil**|application-component|||
+|**App PGN Móvil**|application-component|<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Web**|application-component|||
+|**App PGN Web**|application-component|||
+|**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Cola ppal**|application-component|||
+|**Cola reintento**|application-component|||
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Controlador admin**|application-component||*plataforma:* cs<br>|
+|**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
+|**Controlador frontal web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>|*plataforma:* js<br>|
+|**Controlador funcional**|application-component||*plataforma:* js<br>|
+|**Modelo (neg)**|application-component||*plataforma:* cs<br>|
+|**Portal Funcionarios**|application-component|||
+|**Portal Personas**|application-component|||
+|**Portales**|application-component|||
+|**Puerto datos 1**|application-component||*plataforma:* js<br>|
+|**Puerto datos 2**|application-component||*plataforma:* cs<br>|
+|**Reverse Proxy**|application-component|||
+|**Reverse Proxy**|application-component|||
+|**Reverse Proxy**|application-component|||
+|**Seguridad**|application-component||*plataforma:* sql<br>*brecha:* 100<br>|
+|**Service Control Plane**|application-component|||
+|**Transacciones**|application-component||*plataforma:* sql<br>*brecha:* 100<br>|
+|**Utilitario**|application-component||*plataforma:* no-sql<br>|
+|**Vista móvil**|application-component||*plataforma:* js<br>|
+|**Vista web**|application-component||*plataforma:* html<br>|
+|**Https**|application-interface|||
+|**Https**|application-interface|||
+|**Interfaz de aplicación (runtime)**|application-interface|Servidor web:  Microsoft-IIS/10.0 <br>Marco de Programación: ASP.NET<br>Huellas digitales identificadas:  <br>Huella digital SHA-256 “FC:79:06:7E:F5:24:20:50:F1:C0:74:F7:85:56:B9:05:B7:33:A3:2D:44:A0:48”<br>Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:BE”<br>|*plataforma:* angular 11<br>|
+|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
+|**gRPC**|application-interface|||
+|**gRPC**|application-interface|||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Interfaz de datos 3**|application-service|||
+|**API Consumer**|business-actor|||
+|**API Providers**|business-actor|||
+|**Communication Network (DMZ)**|communication-network|||
+|**Communication Network (DMZ)**|communication-network|||
+|**Communication Network (DMZ)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Private virtual network API Management**|communication-network|||
+|**Private virtual network Kubernates**|communication-network|||
+|**Mensaje: JSON**|data-object|||
+|**Mobile**|device|||
+|**PC/Laptop**|device|||
+|**Regionales**|device|||
+|** Database por módulo - CQRS**|grouping|||
+|**Canales**|grouping|||
+|**Comunicación y Ruteo**|grouping|||
+|**Control Plane**|grouping|||
+|**Control transaccional**|grouping|||
+|**Data Plane**|grouping|||
+|**Data Plane**|grouping|||
+|**Fase 1. Arquitectura SUI 1.0**|grouping|||
+|**Fase 2. Arquitectura SUI 1.5**|grouping|||
+|**Fase 3. Arquitectura SUI 2.0**|grouping|||
+|**Grupo Service 1**|grouping|||
+|**Grupo Service 2**|grouping|||
+|**Infraestructura SUI, Fase 1. PaaS, SaaS**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
+|**Infraestructura SUI. Fase 2. SaaS**|grouping|||
+|**Integración**|grouping|||
+|**Management Plane **|grouping|||
+|**Managemnet Plane**|grouping|||
+|**Monitoreo y Métricas consumo**|grouping|||
+|**PGN SUI**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
+|**SUI - Arquitectura Tecnologías (infraestructura)**|grouping|||
+|**Seguridad / Protección**|grouping|||
+|**Servidores**|grouping|||
+|**Dependencias**|location|||
+|**SUI Migración. Procuraduría General de la Nación. 2023**|location|||
+|**Balanceador**|node|||
+|**Bastion Host Management**|node|||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM 8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Sistema de Seguridad (LDAP) Control de acceso**|node|Sistema de autenticación del directorio activo.||
+|**Private Endpoint per microservices**|path|||
+|**Vnet Bastion**|path|||
+|**Arquitectura SUI 1.0**|plateau|||
+|**Arquitectura SUI 1.5**|plateau|||
+|**Arquitectura SUI 2.0**|plateau|||
+|**APP1.Relatoría**|system-software|||
+|**APP1.Relatoría**|system-software|||
+|**APP2.SIRI**|system-software|||
+|**APP2.SIRI**|system-software|||
+|**APP3.Control interno**|system-software|||
+|**APP3.Control interno**|system-software|||
+|**APP4.Hominis**|system-software|||
+|**APP4.Hominis**|system-software|||
+|**APP5.SIM**|system-software|||
+|**APP5.SIM**|system-software|||
+|**APP6.Estratego**|system-software|||
+|**APP6.Estratego**|system-software|||
+|**App PGN Móvil**|system-software|||
+|**App PGN Móvil**|system-software|||
+|**App PGN Web**|system-software|||
+|**App PGN Web**|system-software|||
+|**Management Bastion**|system-software|||
+|**Internal load balanced**|technology-function|||
+|**Message broker**|technology-function|||
+|**Topic**|technology-function|||
+|**www pgn com**|technology-interface|||
+|**www pgn com**|technology-interface|||
+|**www pgn com**|technology-interface|||
+|** Event Hubs**|technology-service|||
+|** Event Hubs**|technology-service|||
+|**API Gateway**|technology-service|||
+|**API Management**|technology-service|||
+|**API Management Service**|technology-service|||
+|**Active Directory**|technology-service|||
+|**Application Monitor**|technology-service|||
+|**Event Grid**|technology-service|||
+|**Infrastructure Monitor**|technology-service|||
+|**Kay vault**|technology-service|||
+|**Network Security Group**|technology-service|||
+|**Platform Monitor**|technology-service|||
+|**SQL instance config data  **|technology-service|||
+|**SQL instance operational data **|technology-service|||
+|**Servidores**|technology-service|||
+|**Servidores central**|technology-service|||
+
+<br>
+
 <div style="page-break-before: always;"></div>
 \newpage
 
@@ -2226,7 +2410,7 @@ Con una arquitectura orientada a servicios Sistema Único de Información (SUI) 
 <br>
 
 
-``Generated on: Tue Dec 05 2023 13:20:47 GMT-0500 (COT)``
+``Generated on: Thu Dec 14 2023 15:51:53 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
