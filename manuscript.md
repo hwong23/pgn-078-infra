@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-12-14'
+date-meta: '2024-10-11'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-12-14" />
-  <meta name="citation_publication_date" content="2023-12-14" />
-  <meta property="article:published_time" content="2023-12-14" />
-  <meta name="dc.modified" content="2023-12-14T20:54:28+00:00" />
-  <meta property="article:modified_time" content="2023-12-14T20:54:28+00:00" />
+  <meta name="dc.date" content="2024-10-11" />
+  <meta name="citation_publication_date" content="2024-10-11" />
+  <meta property="article:published_time" content="2024-10-11" />
+  <meta name="dc.modified" content="2024-10-11T01:22:09+00:00" />
+  <meta property="article:modified_time" content="2024-10-11T01:22:09+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078-infra/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078-infra/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078-infra/v/a61992f3ad853b8fedd9cabd9e897d4066126481/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/a61992f3ad853b8fedd9cabd9e897d4066126481/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078-infra/v/a61992f3ad853b8fedd9cabd9e897d4066126481/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.0aab6dc de 14 Dec 2023
+| **Versión** del producto 1.a61992f de 11 Oct 2024
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 14 Dec 2023
+| 11 Oct 2024
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SUI, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078-infra/v/0aab6dc17dc05fc45f3f16126f7cb12215978c9d/))
+([Web](https://hwong23.github.io/pgn-078-infra/v/a61992f3ad853b8fedd9cabd9e897d4066126481/))
 están basados en el resultado de la Fase 1 del proyecto PGN SUI del 2022,
-[Sharepoint Softgic@0aab6dc](http://softgic.sharepoint.com)
-del December 14, 2023.
+[Sharepoint Softgic@a61992f](http://softgic.sharepoint.com)
+del October 11, 2024.
 </em></small>
 
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.a61992f | 2024-10-10. upd |
 | 1.0aab6dc | 2023-12-14. doc--dic |
 | 1.4855b55 | 2023-12-05. pptx--pgn |
 | 1.0de2b5f | 2023-11-29. doc SUI* |
@@ -152,8 +153,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.041d9bd | 2023-11-28. doc--nov |
 | 1.348c7a8 | 2023-11-28. doc--nov |
 | 1.ae18279 | 2023-11-23. arqdoc1 |
-| 1.e455e6a | 2023-11-23. arqdoc1 |
-| 1.62bdc35 | 2023-10-22. histr4 |˝
+| 1.e455e6a | 2023-11-23. arqdoc1 |˝
 | Vínculos       | [N003a Vista Segmento PGN SUI](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
